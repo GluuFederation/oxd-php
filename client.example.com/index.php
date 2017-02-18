@@ -2,7 +2,7 @@
 
 <?php
 /**
- * Created by  Vlad Karapetyan
+ * Created by  Volodya Karapetyan
  */
 session_start();
 //session_destroy();exit;

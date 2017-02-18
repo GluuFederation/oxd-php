@@ -13,7 +13,7 @@ oxd-php-library source is available on Github:
 ### Composer: oxd-php-api
 
 - [Compose API source](https://github.com/GluuFederation/oxd-php-api)
-- [Library version 2.4.4](https://github.com/GluuFederation/oxd-php-api/releases/tag/v2.4.4)
+- [Library version 3.0.0](https://github.com/GluuFederation/oxd-php-api/releases/tag/v3.0.0)
 
 This is the preferred method. See the [composer](https://getcomposer.org) 
 website for 
@@ -24,7 +24,7 @@ To install oxd-php-api via Composer, execute the following command
 in your project root:
 
 ```
-$ composer install `composer require "gluufederation/oxd-php-api": "2.4.4"`
+$ composer install `composer require "gluufederation/oxd-php-api": "3.0.0"`
 
 ```
 

@@ -1,6 +1,6 @@
 <?php
 /*
- * Created by Vlad Karapetyan
+ * Created by Volodya Karapetyan
 */
     session_start();
 if(!empty($_SESSION['state']) and !empty($_SESSION['user_oxd_id_token']) and !empty($_SESSION['session_state'])){
