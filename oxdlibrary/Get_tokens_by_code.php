@@ -15,7 +15,7 @@
 	 *
 	 * @author    Gluu Inc.          : <https://gluu.org>
 	 * @link      Oxd site           : <https://oxd.gluu.org>
-	 * @link      Documentation      : <https://oxd.gluu.org/docs/3.0.0/libraries/php/>
+	 * @link      Documentation      : <https://oxd.gluu.org/docs/libraries/php/>
 	 * @director  Mike Schwartz      : <mike@gluu.org>
 	 * @support   Support page       : <support@gluu.org>
 	 * @developer Volodya Karapetyan : <https://github.com/karapetyan88> <mr.karapetyan88@gmail.com>
@@ -51,7 +51,7 @@
 	 *
 	 * Class is connecting to oxd-server via socket, and getting token code from gluu-server.
 	 *
-	 * @package		G luu-oxd-library
+	 * @package		  Gluu-oxd-library
 	 * @subpackage	Libraries
 	 * @category	  Relying Party (RP) and User Managed Access (UMA)
 	 * @see	        Client_Socket_OXD_RP
