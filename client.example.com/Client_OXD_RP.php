@@ -18,7 +18,7 @@
 	 * @link      Documentation      : <https://oxd.gluu.org/docs/libraries/php/>
 	 * @link      GitHub             : <https://github.com/GluuFederation/oxd-php-library>
 	 * @director  Mike Schwartz      : <mike@gluu.org>
-	 * @support   Support page       : <support@gluu.org>
+	 * @support   Support email      : <support@gluu.org>
 	 * @developer Volodya Karapetyan : <https://github.com/karapetyan88> <mr.karapetyan88@gmail.com>
 	 *
 	 
