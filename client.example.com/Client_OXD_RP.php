@@ -11,11 +11,11 @@
 	 *
 	 * @package	  Oxd Library by Gluu
 	 * @category  Library, Api
-	 * @version   3.0.0
+	 * @version   3.0.1
 	 *
 	 * @author    Gluu Inc.          : <https://gluu.org>
 	 * @link      Oxd site           : <https://oxd.gluu.org>
-	 * @link      Documentation      : <https://oxd.gluu.org/docs/libraries/php/>
+	 * @link      Documentation      : <https://gluu.org/docs/oxd/3.0.1/libraries/php/>
 	 * @link      GitHub             : <https://github.com/GluuFederation/oxd-php-library>
 	 * @director  Mike Schwartz      : <mike@gluu.org>
 	 * @support   Support email      : <support@gluu.org>
