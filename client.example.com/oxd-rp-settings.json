@@ -1,5 +1,5 @@
 {
-  "op_host": "https://ce-dev2.gluu.org",
+  "op_host": "https://idp.example.org",
   "oxd_host_port":8099,
   "authorization_redirect_uri" : "https://client.example.com/login/index.php",
   "post_logout_redirect_uri" : "https://client.example.com/logout/index.php",
