@@ -1,0 +1,600 @@
+
+Friday 14th of April 2017 02:30:16 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 02:30:16 PM
+Client: oxd_socket_request629
+
+Friday 14th of April 2017 02:30:18 PM
+Client: oxd_socket_response0111{"status":"ok","data":{"oxd_id":"8b15cc74-dfb1-4335-b839-e05f85b902a6","op_host":"https://gluu.centroxy.com/"}}
+
+Friday 14th of April 2017 02:30:18 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 02:32:21 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 02:32:21 PM
+Client: oxd_socket_request629
+
+Friday 14th of April 2017 02:32:22 PM
+Client: oxd_socket_response0111{"status":"ok","data":{"oxd_id":"c7c31d47-d602-4e5f-bfa3-bcc99a634d74","op_host":"https://gluu.centroxy.com/"}}
+
+Friday 14th of April 2017 02:32:22 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 02:33:08 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 02:33:08 PM
+Client: oxd_socket_request629
+
+Friday 14th of April 2017 02:33:09 PM
+Client: oxd_socket_response0111{"status":"ok","data":{"oxd_id":"7d35301f-4a83-48cf-95e3-8a86e27b43a6","op_host":"https://gluu.centroxy.com/"}}
+
+Friday 14th of April 2017 02:33:09 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 02:33:26 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 02:33:26 PM
+Client: oxd_socket_request651
+
+Friday 14th of April 2017 02:33:27 PM
+Client: oxd_socket_response0072{"status":"ok","data":{"oxd_id":"7d35301f-4a83-48cf-95e3-8a86e27b43a6"}}
+
+Friday 14th of April 2017 02:33:27 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 02:33:31 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 02:33:31 PM
+Client: oxd_socket_request206
+
+Friday 14th of April 2017 02:33:31 PM
+Client: oxd_socket_response0369{"status":"ok","data":{"authorization_url":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/authorize?response_type=code&client_id=@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3&redirect_uri=https://client.oxdtest.com/&scope=openid+profile+uma_protection+uma_authorization&state=jjuae6mn9ibo7aa1iq7a0l91nf&nonce=m75cfoogobpg0nenh4js2j2hd7"}}
+
+Friday 14th of April 2017 02:33:31 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 02:34:27 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 02:34:27 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 02:34:30 PM
+Client: oxd_socket_response1566{"status":"ok","data":{"access_token":"dede4ca3-82bf-4c96-90d9-813da4ce1f75","expires_in":299,"id_token":"eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE3Njg3MiwiaWF0IjoxNDkyMTczMjcyLCJub25jZSI6Im03NWNmb29nb2JwZzBuZW5oNGpzMmoyaGQ3IiwiYXV0aF90aW1lIjoxNDkyMTEwOTkzLCJhdF9oYXNoIjoiZGkxVGhOeXdkV3ZCSHVENUhXbnRqUSIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.jT2Y10dgZ0YKN3Vq8iD9syyE258wcU7zuLrry54nZkeqv_ziSCK2KpB1onskj7K5EZMQEuxcFRLw4vNwrebg9IWkHepcbAbV2kx65UMvlPZWoJ6GRIYskPz06Neet4wzhZ8IYDWvGeMSoyjwKFdpzr78BtwY15C-Lr1FUp1ai5X8CbRaLyy_VRNRtB6YJiGzBcH9ljhnbivf0pLkph-ucBjCqiYEURbi1xbg1U_w2MlYq8WbtaxEaTsJ4p8SIEpAR-c89Rm3l9ldvGfzbxedwLn1ZKEOiva-fGDgE4Sn2Oi30QHvGEsEx-fE_aYFgNp7HLPKr28GvLesIrrdSEv_Yg","refresh_token":"17038dc3-559a-485d-8ce0-9eb649fd9f3d","id_token_claims":{"auth_time":["1492110993"],"oxValidationURI":["https://gluu.centroxy.com/oxauth/opiframe"],"exp":["1492176872"],"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"at_hash":["di1ThNywdWvBHuD5HWntjQ"],"nonce":["m75cfoogobpg0nenh4js2j2hd7"],"aud":["@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3"],"iss":["https://gluu.centroxy.com"],"oxOpenIDConnectVersion":["openidconnect-1.0"],"iat":["1492173272"]}}}
+
+Friday 14th of April 2017 02:34:30 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 02:34:39 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 02:34:39 PM
+Client: oxd_socket_request144
+
+Friday 14th of April 2017 02:34:40 PM
+Client: oxd_socket_response0191{"status":"ok","data":{"claims":{"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"email":["sdash@centroxy.com"],"name":["Sampad"],"family_name":["Dash"],"given_name":["Sampadananda"]}}}
+
+Friday 14th of April 2017 02:34:40 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 04:59:13 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 04:59:13 PM
+Client: oxd_socket_request651
+
+Friday 14th of April 2017 04:59:15 PM
+Client: oxd_socket_response0072{"status":"ok","data":{"oxd_id":"7d35301f-4a83-48cf-95e3-8a86e27b43a6"}}
+
+Friday 14th of April 2017 04:59:15 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 04:59:37 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 04:59:37 PM
+Client: oxd_socket_request206
+
+Friday 14th of April 2017 04:59:38 PM
+Client: oxd_socket_response0369{"status":"ok","data":{"authorization_url":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/authorize?response_type=code&client_id=@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3&redirect_uri=https://client.oxdtest.com/&scope=openid+profile+uma_protection+uma_authorization&state=nco2pt8nab76c77uqducige7gh&nonce=sisa6tt8v2i6mp68ufaocio56e"}}
+
+Friday 14th of April 2017 04:59:38 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:00:27 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:00:27 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:00:31 PM
+Client: oxd_socket_response1566{"status":"ok","data":{"access_token":"ed948f95-365d-45fc-bcaf-7b9c5f1c5ceb","expires_in":299,"id_token":"eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4NTYzMiwiaWF0IjoxNDkyMTgyMDMyLCJub25jZSI6InNpc2E2dHQ4djJpNm1wNjh1ZmFvY2lvNTZlIiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiNFFSdksxcnM5WjdzME1DeUg0Q3FJUSIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.eHN532cFdlcCOQQ_P8_7oGd05Sz4hEWdUT1ozyeTWQ39h40hGydJ6iTy6FbMzpeiUNFLFx80tCMmhdl4xChzwX-D3ifKDBno1XHY9LhvW8jDKXj435ZT1sf1Q2U5oxEaASTVDyJaIPOFCQ6rTSqX4ZzrnZo9KiTY8VnpgxLdvRtkcBiTRjEJvMCQ9gemrB1h260gTSS_sKM5vkz6mP9VSnx4KIAW19ixzYNFls1mpNoyQec25xWAaimZlMQsEaFaSkFaSWKWqoLq4FXVghtKr-8m4R1LUADFJCvSYoJgkflILdxhsqcCMH9OufY6EAN6wY3eOavWjfF02SbArFgSnw","refresh_token":"6dc88cdd-51fa-4c4d-8a17-66a49a7b6dd1","id_token_claims":{"auth_time":["1492181993"],"oxValidationURI":["https://gluu.centroxy.com/oxauth/opiframe"],"exp":["1492185632"],"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"at_hash":["4QRvK1rs9Z7s0MCyH4CqIQ"],"nonce":["sisa6tt8v2i6mp68ufaocio56e"],"aud":["@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3"],"iss":["https://gluu.centroxy.com"],"oxOpenIDConnectVersion":["openidconnect-1.0"],"iat":["1492182032"]}}}
+
+Friday 14th of April 2017 05:00:31 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:00:40 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:00:40 PM
+Client: oxd_socket_request144
+
+Friday 14th of April 2017 05:00:41 PM
+Client: oxd_socket_response0191{"status":"ok","data":{"claims":{"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"email":["sdash@centroxy.com"],"name":["Sampad"],"family_name":["Dash"],"given_name":["Sampadananda"]}}}
+
+Friday 14th of April 2017 05:00:41 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:19:01 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:19:01 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:19:01 PM
+Client: oxd_socket_response1084{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4NTYzMiwiaWF0IjoxNDkyMTgyMDMyLCJub25jZSI6InNpc2E2dHQ4djJpNm1wNjh1ZmFvY2lvNTZlIiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiNFFSdksxcnM5WjdzME1DeUg0Q3FJUSIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.eHN532cFdlcCOQQ_P8_7oGd05Sz4hEWdUT1ozyeTWQ39h40hGydJ6iTy6FbMzpeiUNFLFx80tCMmhdl4xChzwX-D3ifKDBno1XHY9LhvW8jDKXj435ZT1sf1Q2U5oxEaASTVDyJaIPOFCQ6rTSqX4ZzrnZo9KiTY8VnpgxLdvRtkcBiTRjEJvMCQ9gemrB1h260gTSS_sKM5vkz6mP9VSnx4KIAW19ixzYNFls1mpNoyQec25xWAaimZlMQsEaFaSkFaSWKWqoLq4FXVghtKr-8m4R1LUADFJCvSYoJgkflILdxhsqcCMH9OufY6EAN6wY3eOavWjfF02SbArFgSnw"}}
+
+Friday 14th of April 2017 05:19:01 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:19:41 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:19:41 PM
+Client: oxd_socket_request651
+
+Friday 14th of April 2017 05:19:43 PM
+Client: oxd_socket_response0072{"status":"ok","data":{"oxd_id":"7d35301f-4a83-48cf-95e3-8a86e27b43a6"}}
+
+Friday 14th of April 2017 05:19:43 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:19:46 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:19:46 PM
+Client: oxd_socket_request206
+
+Friday 14th of April 2017 05:19:46 PM
+Client: oxd_socket_response0369{"status":"ok","data":{"authorization_url":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/authorize?response_type=code&client_id=@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3&redirect_uri=https://client.oxdtest.com/&scope=openid+profile+uma_protection+uma_authorization&state=9ikkmct3lj63ou29eaindcjm9l&nonce=leb4tevl347n3qkh3e8u1r32q2"}}
+
+Friday 14th of April 2017 05:19:46 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:20:27 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:20:27 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:20:30 PM
+Client: oxd_socket_response1566{"status":"ok","data":{"access_token":"da9364fb-b112-4f72-8867-a0290598fdc2","expires_in":299,"id_token":"eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4NjgzMiwiaWF0IjoxNDkyMTgzMjMyLCJub25jZSI6ImxlYjR0ZXZsMzQ3bjNxa2gzZTh1MXIzMnEyIiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiQjQ0Wkp1ZURDa0pMckVsRHlhbDBXdyIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.TKFmqfUz7uJ-YZzaRZ5YjUghzM6GHSzHp9RNwe62oS-AqMEetCabcbsJaBzHuQvBUkrbmlks2RwurIvDN5XrbqIDzzdBU94RHdeqoNO5NNY24TKfEIAfYuRaHxO4Dmp1XbiCsUQRrv8Xc71kmDFGOWL_myfFWGrrtuDq09bxLtZg81UfB506VBmGrmv65JO5HEY6Sh3Wp8aFFnFFI6e9skDReCl2NjlZNmFo5cEUkNYb7hc0QYA1UWa3cTaR98W5FaSfeQQx3HkQ20-wBHNjc8ebPjO3HkynER5H-6lvhuXstv6drchw9ur5Iqq6QMauHtba3SXS4Iqi3BBK-DVF1w","refresh_token":"08f16714-bbae-4d2a-83c3-70f41148c8a8","id_token_claims":{"auth_time":["1492181993"],"oxValidationURI":["https://gluu.centroxy.com/oxauth/opiframe"],"exp":["1492186832"],"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"at_hash":["B44ZJueDCkJLrElDyal0Ww"],"nonce":["leb4tevl347n3qkh3e8u1r32q2"],"aud":["@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3"],"iss":["https://gluu.centroxy.com"],"oxOpenIDConnectVersion":["openidconnect-1.0"],"iat":["1492183232"]}}}
+
+Friday 14th of April 2017 05:20:30 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:20:44 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:20:44 PM
+Client: oxd_socket_request144
+
+Friday 14th of April 2017 05:20:45 PM
+Client: oxd_socket_response0191{"status":"ok","data":{"claims":{"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"email":["sdash@centroxy.com"],"name":["Sampad"],"family_name":["Dash"],"given_name":["Sampadananda"]}}}
+
+Friday 14th of April 2017 05:20:45 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:20:50 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:20:50 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:20:50 PM
+Client: oxd_socket_response1084{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4NjgzMiwiaWF0IjoxNDkyMTgzMjMyLCJub25jZSI6ImxlYjR0ZXZsMzQ3bjNxa2gzZTh1MXIzMnEyIiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiQjQ0Wkp1ZURDa0pMckVsRHlhbDBXdyIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.TKFmqfUz7uJ-YZzaRZ5YjUghzM6GHSzHp9RNwe62oS-AqMEetCabcbsJaBzHuQvBUkrbmlks2RwurIvDN5XrbqIDzzdBU94RHdeqoNO5NNY24TKfEIAfYuRaHxO4Dmp1XbiCsUQRrv8Xc71kmDFGOWL_myfFWGrrtuDq09bxLtZg81UfB506VBmGrmv65JO5HEY6Sh3Wp8aFFnFFI6e9skDReCl2NjlZNmFo5cEUkNYb7hc0QYA1UWa3cTaR98W5FaSfeQQx3HkQ20-wBHNjc8ebPjO3HkynER5H-6lvhuXstv6drchw9ur5Iqq6QMauHtba3SXS4Iqi3BBK-DVF1w"}}
+
+Friday 14th of April 2017 05:20:50 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:22:29 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:22:29 PM
+Client: oxd_socket_request651
+
+Friday 14th of April 2017 05:22:30 PM
+Client: oxd_socket_response0072{"status":"ok","data":{"oxd_id":"7d35301f-4a83-48cf-95e3-8a86e27b43a6"}}
+
+Friday 14th of April 2017 05:22:30 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:22:33 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:22:33 PM
+Client: oxd_socket_request206
+
+Friday 14th of April 2017 05:22:33 PM
+Client: oxd_socket_response0369{"status":"ok","data":{"authorization_url":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/authorize?response_type=code&client_id=@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3&redirect_uri=https://client.oxdtest.com/&scope=openid+profile+uma_protection+uma_authorization&state=je7otdos6n6qnl822pflbkd08o&nonce=ngeel2tole2taq4138mh0lmocu"}}
+
+Friday 14th of April 2017 05:22:33 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:23:09 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:23:09 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:23:12 PM
+Client: oxd_socket_response1566{"status":"ok","data":{"access_token":"edbe9bda-2e54-4c18-aa88-f956bd7dee88","expires_in":299,"id_token":"eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4Njk5NCwiaWF0IjoxNDkyMTgzMzk0LCJub25jZSI6Im5nZWVsMnRvbGUydGFxNDEzOG1oMGxtb2N1IiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiVDg2WW8wSjJJaHpiU1VqQndaR2MxQSIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.Agi6AMADzhgyYGRvdLjyWnF--W04cQKP6t-nIjvotfwsZzqSGSxdME05SKJt6WsBaBilxpsLAyxV2mwAZZNf2MEvxEgXA7pMazen2WdL0e26h93H0LK94Yo6EOEwO9B3PtUD1LU5TbzQbd8Pd_nhT8WkEp67xClYKi1XrB_AU708E6Tiz-qwF_e1-yJof3CusMulsAcXivKxT1KWs2QNBkniv2eRvrVntVlgvk5_yLw7Z_E6NrEACOIsjamo-kMRg5EKA4biaFzYFW3t6mtaX0r_HtsnUTQB2oRTcbEc4Svw-BSh6lhkbKeSywdax7jllAobbSXSfGIc8LcFlSsW6A","refresh_token":"3605c125-6bb1-4904-adb8-ccb7d408d7d9","id_token_claims":{"auth_time":["1492181993"],"oxValidationURI":["https://gluu.centroxy.com/oxauth/opiframe"],"exp":["1492186994"],"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"at_hash":["T86Yo0J2IhzbSUjBwZGc1A"],"nonce":["ngeel2tole2taq4138mh0lmocu"],"aud":["@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3"],"iss":["https://gluu.centroxy.com"],"oxOpenIDConnectVersion":["openidconnect-1.0"],"iat":["1492183394"]}}}
+
+Friday 14th of April 2017 05:23:12 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:23:14 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:23:14 PM
+Client: oxd_socket_request144
+
+Friday 14th of April 2017 05:23:16 PM
+Client: oxd_socket_response0191{"status":"ok","data":{"claims":{"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"email":["sdash@centroxy.com"],"name":["Sampad"],"family_name":["Dash"],"given_name":["Sampadananda"]}}}
+
+Friday 14th of April 2017 05:23:16 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:23:20 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:23:20 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:23:20 PM
+Client: oxd_socket_response1084{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4Njk5NCwiaWF0IjoxNDkyMTgzMzk0LCJub25jZSI6Im5nZWVsMnRvbGUydGFxNDEzOG1oMGxtb2N1IiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiVDg2WW8wSjJJaHpiU1VqQndaR2MxQSIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.Agi6AMADzhgyYGRvdLjyWnF--W04cQKP6t-nIjvotfwsZzqSGSxdME05SKJt6WsBaBilxpsLAyxV2mwAZZNf2MEvxEgXA7pMazen2WdL0e26h93H0LK94Yo6EOEwO9B3PtUD1LU5TbzQbd8Pd_nhT8WkEp67xClYKi1XrB_AU708E6Tiz-qwF_e1-yJof3CusMulsAcXivKxT1KWs2QNBkniv2eRvrVntVlgvk5_yLw7Z_E6NrEACOIsjamo-kMRg5EKA4biaFzYFW3t6mtaX0r_HtsnUTQB2oRTcbEc4Svw-BSh6lhkbKeSywdax7jllAobbSXSfGIc8LcFlSsW6A"}}
+
+Friday 14th of April 2017 05:23:20 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:24:02 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:24:02 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:24:02 PM
+Client: oxd_socket_response1084{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4Njk5NCwiaWF0IjoxNDkyMTgzMzk0LCJub25jZSI6Im5nZWVsMnRvbGUydGFxNDEzOG1oMGxtb2N1IiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiVDg2WW8wSjJJaHpiU1VqQndaR2MxQSIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.Agi6AMADzhgyYGRvdLjyWnF--W04cQKP6t-nIjvotfwsZzqSGSxdME05SKJt6WsBaBilxpsLAyxV2mwAZZNf2MEvxEgXA7pMazen2WdL0e26h93H0LK94Yo6EOEwO9B3PtUD1LU5TbzQbd8Pd_nhT8WkEp67xClYKi1XrB_AU708E6Tiz-qwF_e1-yJof3CusMulsAcXivKxT1KWs2QNBkniv2eRvrVntVlgvk5_yLw7Z_E6NrEACOIsjamo-kMRg5EKA4biaFzYFW3t6mtaX0r_HtsnUTQB2oRTcbEc4Svw-BSh6lhkbKeSywdax7jllAobbSXSfGIc8LcFlSsW6A"}}
+
+Friday 14th of April 2017 05:24:02 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:27:16 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:27:16 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:27:16 PM
+Client: oxd_socket_response1084{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4Njk5NCwiaWF0IjoxNDkyMTgzMzk0LCJub25jZSI6Im5nZWVsMnRvbGUydGFxNDEzOG1oMGxtb2N1IiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiVDg2WW8wSjJJaHpiU1VqQndaR2MxQSIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.Agi6AMADzhgyYGRvdLjyWnF--W04cQKP6t-nIjvotfwsZzqSGSxdME05SKJt6WsBaBilxpsLAyxV2mwAZZNf2MEvxEgXA7pMazen2WdL0e26h93H0LK94Yo6EOEwO9B3PtUD1LU5TbzQbd8Pd_nhT8WkEp67xClYKi1XrB_AU708E6Tiz-qwF_e1-yJof3CusMulsAcXivKxT1KWs2QNBkniv2eRvrVntVlgvk5_yLw7Z_E6NrEACOIsjamo-kMRg5EKA4biaFzYFW3t6mtaX0r_HtsnUTQB2oRTcbEc4Svw-BSh6lhkbKeSywdax7jllAobbSXSfGIc8LcFlSsW6A"}}
+
+Friday 14th of April 2017 05:27:16 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:34:38 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:34:38 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:34:38 PM
+Client: oxd_socket_response1084{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4Njk5NCwiaWF0IjoxNDkyMTgzMzk0LCJub25jZSI6Im5nZWVsMnRvbGUydGFxNDEzOG1oMGxtb2N1IiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiVDg2WW8wSjJJaHpiU1VqQndaR2MxQSIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.Agi6AMADzhgyYGRvdLjyWnF--W04cQKP6t-nIjvotfwsZzqSGSxdME05SKJt6WsBaBilxpsLAyxV2mwAZZNf2MEvxEgXA7pMazen2WdL0e26h93H0LK94Yo6EOEwO9B3PtUD1LU5TbzQbd8Pd_nhT8WkEp67xClYKi1XrB_AU708E6Tiz-qwF_e1-yJof3CusMulsAcXivKxT1KWs2QNBkniv2eRvrVntVlgvk5_yLw7Z_E6NrEACOIsjamo-kMRg5EKA4biaFzYFW3t6mtaX0r_HtsnUTQB2oRTcbEc4Svw-BSh6lhkbKeSywdax7jllAobbSXSfGIc8LcFlSsW6A"}}
+
+Friday 14th of April 2017 05:34:38 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:35:13 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:35:13 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:35:13 PM
+Client: oxd_socket_response1084{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4Njk5NCwiaWF0IjoxNDkyMTgzMzk0LCJub25jZSI6Im5nZWVsMnRvbGUydGFxNDEzOG1oMGxtb2N1IiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiVDg2WW8wSjJJaHpiU1VqQndaR2MxQSIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.Agi6AMADzhgyYGRvdLjyWnF--W04cQKP6t-nIjvotfwsZzqSGSxdME05SKJt6WsBaBilxpsLAyxV2mwAZZNf2MEvxEgXA7pMazen2WdL0e26h93H0LK94Yo6EOEwO9B3PtUD1LU5TbzQbd8Pd_nhT8WkEp67xClYKi1XrB_AU708E6Tiz-qwF_e1-yJof3CusMulsAcXivKxT1KWs2QNBkniv2eRvrVntVlgvk5_yLw7Z_E6NrEACOIsjamo-kMRg5EKA4biaFzYFW3t6mtaX0r_HtsnUTQB2oRTcbEc4Svw-BSh6lhkbKeSywdax7jllAobbSXSfGIc8LcFlSsW6A"}}
+
+Friday 14th of April 2017 05:35:13 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:35:29 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:35:29 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:35:29 PM
+Client: oxd_socket_response1084{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4Njk5NCwiaWF0IjoxNDkyMTgzMzk0LCJub25jZSI6Im5nZWVsMnRvbGUydGFxNDEzOG1oMGxtb2N1IiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiVDg2WW8wSjJJaHpiU1VqQndaR2MxQSIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.Agi6AMADzhgyYGRvdLjyWnF--W04cQKP6t-nIjvotfwsZzqSGSxdME05SKJt6WsBaBilxpsLAyxV2mwAZZNf2MEvxEgXA7pMazen2WdL0e26h93H0LK94Yo6EOEwO9B3PtUD1LU5TbzQbd8Pd_nhT8WkEp67xClYKi1XrB_AU708E6Tiz-qwF_e1-yJof3CusMulsAcXivKxT1KWs2QNBkniv2eRvrVntVlgvk5_yLw7Z_E6NrEACOIsjamo-kMRg5EKA4biaFzYFW3t6mtaX0r_HtsnUTQB2oRTcbEc4Svw-BSh6lhkbKeSywdax7jllAobbSXSfGIc8LcFlSsW6A"}}
+
+Friday 14th of April 2017 05:35:29 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:35:53 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:35:53 PM
+Client: oxd_socket_request651
+
+Friday 14th of April 2017 05:35:54 PM
+Client: oxd_socket_response0072{"status":"ok","data":{"oxd_id":"7d35301f-4a83-48cf-95e3-8a86e27b43a6"}}
+
+Friday 14th of April 2017 05:35:54 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:35:57 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:35:57 PM
+Client: oxd_socket_request206
+
+Friday 14th of April 2017 05:35:57 PM
+Client: oxd_socket_response0369{"status":"ok","data":{"authorization_url":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/authorize?response_type=code&client_id=@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3&redirect_uri=https://client.oxdtest.com/&scope=openid+profile+uma_protection+uma_authorization&state=fojbofh3eofcr3ma52rnq2poqp&nonce=ulfnkcu7jirjk30i8aston5qft"}}
+
+Friday 14th of April 2017 05:35:57 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:36:43 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:36:43 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:36:46 PM
+Client: oxd_socket_response1566{"status":"ok","data":{"access_token":"fd1266f6-a999-45c8-80db-7505018e4fa0","expires_in":299,"id_token":"eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4NzgwOCwiaWF0IjoxNDkyMTg0MjA4LCJub25jZSI6InVsZm5rY3U3amlyamszMGk4YXN0b241cWZ0IiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiN0lhcUQtUDJobXJaZG1zY0R2NFBoZyIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.OZ1OpAJaeTW8w59I-tYyh6jlN13gaTd0xMoB0TE7kpgg8ay8KXF6-WMm3qyEySkrLl_gaN4wljqlx3QzCEjMUfapGsdag9SAUGO5qSyGKJFvRXEdvCSCJG8-MdUA3fnkbqOaj2Va4FpjjSEMmkXY9nw0SBvPMvqtdxn3o8camf5axdr1Gz4zN_ciqG5FV5J1heaJwKJVocdDQJEfd_-4g51moTVzR-vIsK-vs4XMDqXH3Zw7x1jdwagq8O1lTP5v7RnKYaYAAJ8yF5XAdXX77590pQuvrtR-_u-ST-z1XOm-oE0dl97p1vXLaPuQNjDjQcVCN5lNckA4i_SISAygRg","refresh_token":"72048d3b-16ee-4eaa-bc18-e00bd46dec61","id_token_claims":{"auth_time":["1492181993"],"oxValidationURI":["https://gluu.centroxy.com/oxauth/opiframe"],"exp":["1492187808"],"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"at_hash":["7IaqD-P2hmrZdmscDv4Phg"],"nonce":["ulfnkcu7jirjk30i8aston5qft"],"aud":["@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3"],"iss":["https://gluu.centroxy.com"],"oxOpenIDConnectVersion":["openidconnect-1.0"],"iat":["1492184208"]}}}
+
+Friday 14th of April 2017 05:36:46 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:36:51 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:36:51 PM
+Client: oxd_socket_request144
+
+Friday 14th of April 2017 05:36:52 PM
+Client: oxd_socket_response0191{"status":"ok","data":{"claims":{"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"email":["sdash@centroxy.com"],"name":["Sampad"],"family_name":["Dash"],"given_name":["Sampadananda"]}}}
+
+Friday 14th of April 2017 05:36:52 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:37:09 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:37:09 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:37:09 PM
+Client: oxd_socket_response1084{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4NzgwOCwiaWF0IjoxNDkyMTg0MjA4LCJub25jZSI6InVsZm5rY3U3amlyamszMGk4YXN0b241cWZ0IiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiN0lhcUQtUDJobXJaZG1zY0R2NFBoZyIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.OZ1OpAJaeTW8w59I-tYyh6jlN13gaTd0xMoB0TE7kpgg8ay8KXF6-WMm3qyEySkrLl_gaN4wljqlx3QzCEjMUfapGsdag9SAUGO5qSyGKJFvRXEdvCSCJG8-MdUA3fnkbqOaj2Va4FpjjSEMmkXY9nw0SBvPMvqtdxn3o8camf5axdr1Gz4zN_ciqG5FV5J1heaJwKJVocdDQJEfd_-4g51moTVzR-vIsK-vs4XMDqXH3Zw7x1jdwagq8O1lTP5v7RnKYaYAAJ8yF5XAdXX77590pQuvrtR-_u-ST-z1XOm-oE0dl97p1vXLaPuQNjDjQcVCN5lNckA4i_SISAygRg"}}
+
+Friday 14th of April 2017 05:37:09 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:46:58 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:46:58 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 05:46:58 PM
+Client: oxd_socket_response1084{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4NzgwOCwiaWF0IjoxNDkyMTg0MjA4LCJub25jZSI6InVsZm5rY3U3amlyamszMGk4YXN0b241cWZ0IiwiYXV0aF90aW1lIjoxNDkyMTgxOTkzLCJhdF9oYXNoIjoiN0lhcUQtUDJobXJaZG1zY0R2NFBoZyIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.OZ1OpAJaeTW8w59I-tYyh6jlN13gaTd0xMoB0TE7kpgg8ay8KXF6-WMm3qyEySkrLl_gaN4wljqlx3QzCEjMUfapGsdag9SAUGO5qSyGKJFvRXEdvCSCJG8-MdUA3fnkbqOaj2Va4FpjjSEMmkXY9nw0SBvPMvqtdxn3o8camf5axdr1Gz4zN_ciqG5FV5J1heaJwKJVocdDQJEfd_-4g51moTVzR-vIsK-vs4XMDqXH3Zw7x1jdwagq8O1lTP5v7RnKYaYAAJ8yF5XAdXX77590pQuvrtR-_u-ST-z1XOm-oE0dl97p1vXLaPuQNjDjQcVCN5lNckA4i_SISAygRg"}}
+
+Friday 14th of April 2017 05:46:58 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:59:51 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:59:51 PM
+Client: oxd_socket_request651
+
+Friday 14th of April 2017 05:59:53 PM
+Client: oxd_socket_response0072{"status":"ok","data":{"oxd_id":"7d35301f-4a83-48cf-95e3-8a86e27b43a6"}}
+
+Friday 14th of April 2017 05:59:53 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 05:59:56 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 05:59:56 PM
+Client: oxd_socket_request206
+
+Friday 14th of April 2017 05:59:56 PM
+Client: oxd_socket_response0369{"status":"ok","data":{"authorization_url":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/authorize?response_type=code&client_id=@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3&redirect_uri=https://client.oxdtest.com/&scope=openid+profile+uma_protection+uma_authorization&state=mnqje3p65e8mvo9dmr37m44pr1&nonce=f0mtqfnc8m6mk4r6ci47nm21mg"}}
+
+Friday 14th of April 2017 05:59:56 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 06:00:42 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 06:00:42 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 06:00:44 PM
+Client: oxd_socket_response1566{"status":"ok","data":{"access_token":"99cb3d8e-fb9b-4c2e-bc59-65d4524009a0","expires_in":299,"id_token":"eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4OTI0NywiaWF0IjoxNDkyMTg1NjQ3LCJub25jZSI6ImYwbXRxZm5jOG02bWs0cjZjaTQ3bm0yMW1nIiwiYXV0aF90aW1lIjoxNDkyMTg1NjA5LCJhdF9oYXNoIjoieXQxY1FPcHZwYWZYN2g0Z0p0N0lkdyIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.fPzXw1hzhxDFV8kgbVly5tR5tjrTwJ5uqWsf_YEuZLHzDgOREgjoE-VTDhU6VQSQcC7oJUPpNsHdMJdHKykgx0tCViRh759XZKvhcAKYe74d_MzdbjRS-hAm7J8OvbDOS1sGhEwOd09OLCa1uF9aoMEIinsaS6SAqfLX7BYwY4pjA3KPGHlavMPIVQ6kEu63BUKNU33Q5wArCsArwRB08yAmTk9RR5Dj_EmkABnXAVWzFjyHO-x0iewo6tMT8Ca_6kdQ1BMfOBcMvCeVKaO8xl8YNTqhCdvR_g1DrmcNR-SDRMpogY42j_AYsjFmW5zDbEjA31rJ4ttyDT_sD_9Uhw","refresh_token":"99157c88-0eea-4cf9-b526-c423709f5dda","id_token_claims":{"auth_time":["1492185609"],"oxValidationURI":["https://gluu.centroxy.com/oxauth/opiframe"],"exp":["1492189247"],"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"at_hash":["yt1cQOpvpafX7h4gJt7Idw"],"nonce":["f0mtqfnc8m6mk4r6ci47nm21mg"],"aud":["@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3"],"iss":["https://gluu.centroxy.com"],"oxOpenIDConnectVersion":["openidconnect-1.0"],"iat":["1492185647"]}}}
+
+Friday 14th of April 2017 06:00:44 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 06:01:03 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 06:01:03 PM
+Client: oxd_socket_request144
+
+Friday 14th of April 2017 06:01:04 PM
+Client: oxd_socket_response0191{"status":"ok","data":{"claims":{"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"email":["sdash@centroxy.com"],"name":["Sampad"],"family_name":["Dash"],"given_name":["Sampadananda"]}}}
+
+Friday 14th of April 2017 06:01:04 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 06:01:10 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 06:01:10 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 06:01:10 PM
+Client: oxd_socket_response1084{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4OTI0NywiaWF0IjoxNDkyMTg1NjQ3LCJub25jZSI6ImYwbXRxZm5jOG02bWs0cjZjaTQ3bm0yMW1nIiwiYXV0aF90aW1lIjoxNDkyMTg1NjA5LCJhdF9oYXNoIjoieXQxY1FPcHZwYWZYN2g0Z0p0N0lkdyIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.fPzXw1hzhxDFV8kgbVly5tR5tjrTwJ5uqWsf_YEuZLHzDgOREgjoE-VTDhU6VQSQcC7oJUPpNsHdMJdHKykgx0tCViRh759XZKvhcAKYe74d_MzdbjRS-hAm7J8OvbDOS1sGhEwOd09OLCa1uF9aoMEIinsaS6SAqfLX7BYwY4pjA3KPGHlavMPIVQ6kEu63BUKNU33Q5wArCsArwRB08yAmTk9RR5Dj_EmkABnXAVWzFjyHO-x0iewo6tMT8Ca_6kdQ1BMfOBcMvCeVKaO8xl8YNTqhCdvR_g1DrmcNR-SDRMpogY42j_AYsjFmW5zDbEjA31rJ4ttyDT_sD_9Uhw"}}
+
+Friday 14th of April 2017 06:01:10 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 06:02:50 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 06:02:50 PM
+Client: oxd_socket_request651
+
+Friday 14th of April 2017 06:02:51 PM
+Client: oxd_socket_response0072{"status":"ok","data":{"oxd_id":"7d35301f-4a83-48cf-95e3-8a86e27b43a6"}}
+
+Friday 14th of April 2017 06:02:51 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 06:02:56 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 06:02:56 PM
+Client: oxd_socket_request206
+
+Friday 14th of April 2017 06:02:56 PM
+Client: oxd_socket_response0369{"status":"ok","data":{"authorization_url":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/authorize?response_type=code&client_id=@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3&redirect_uri=https://client.oxdtest.com/&scope=openid+profile+uma_protection+uma_authorization&state=jsrepcdhao9792bdm4leoqhp2i&nonce=u054trfddc1urtssaa4ktbfbfj"}}
+
+Friday 14th of April 2017 06:02:56 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 06:03:44 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 06:03:44 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 06:03:46 PM
+Client: oxd_socket_response1566{"status":"ok","data":{"access_token":"cf1929a6-a0d3-4e59-91d1-42c315340ca2","expires_in":299,"id_token":"eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4OTQyOSwiaWF0IjoxNDkyMTg1ODI5LCJub25jZSI6InUwNTR0cmZkZGMxdXJ0c3NhYTRrdGJmYmZqIiwiYXV0aF90aW1lIjoxNDkyMTg1Nzg4LCJhdF9oYXNoIjoiNGN3UF9MWUlKRVB5Z2dhQmVvU0NsdyIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.RucGFRfkhYtVc-vuosjjRZKXmGKLyeAcOSCgf8UKq9YbpOmmsBiZamBnsflHPH1HH7vrTUZgFbxV4_6Kue0ZiO5lMaJf0rCZX45xz6LmsjtTz2RpL6FBzIcoU52SN1WqVNWzEbNbhmwavlersdQYGeP7_OBLR419PBnxaOJ_CECJ2h1sGjGGJyPZFqai7gfJ90T58_XYEfstWDLiG_64Xhl-cgw_m6vEl2FY7GpM6ot2L8M6G-tnwId-ohRhoPlRfqxiXGHXDU0JbrBbxbPptkfQJNNy2zOkzfW2H1T2AqVUoyxAS9HJm5r5Y6GFzl1U2re_7_KfIilVD8aroKBkjw","refresh_token":"963c8d07-355d-4e59-9967-d53e7afa4ea8","id_token_claims":{"auth_time":["1492185788"],"oxValidationURI":["https://gluu.centroxy.com/oxauth/opiframe"],"exp":["1492189429"],"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"at_hash":["4cwP_LYIJEPyggaBeoSClw"],"nonce":["u054trfddc1urtssaa4ktbfbfj"],"aud":["@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!6785.0EF2.87F4.6EC3"],"iss":["https://gluu.centroxy.com"],"oxOpenIDConnectVersion":["openidconnect-1.0"],"iat":["1492185829"]}}}
+
+Friday 14th of April 2017 06:03:46 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 06:04:09 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 06:04:09 PM
+Client: oxd_socket_request144
+
+Friday 14th of April 2017 06:04:11 PM
+Client: oxd_socket_response0191{"status":"ok","data":{"claims":{"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"email":["sdash@centroxy.com"],"name":["Sampad"],"family_name":["Dash"],"given_name":["Sampadananda"]}}}
+
+Friday 14th of April 2017 06:04:11 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 06:04:17 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 06:04:17 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 06:04:17 PM
+Client: oxd_socket_response1084{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghNjc4NS4wRUYyLjg3RjQuNkVDMyIsImV4cCI6MTQ5MjE4OTQyOSwiaWF0IjoxNDkyMTg1ODI5LCJub25jZSI6InUwNTR0cmZkZGMxdXJ0c3NhYTRrdGJmYmZqIiwiYXV0aF90aW1lIjoxNDkyMTg1Nzg4LCJhdF9oYXNoIjoiNGN3UF9MWUlKRVB5Z2dhQmVvU0NsdyIsIm94VmFsaWRhdGlvblVSSSI6Imh0dHBzOi8vZ2x1dS5jZW50cm94eS5jb20vb3hhdXRoL29waWZyYW1lIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoia21KMkhVT2RxNC00UWJId0xmYWZjUUhzWnhucnB3WWhEOUFzRWRCNExXRSJ9.RucGFRfkhYtVc-vuosjjRZKXmGKLyeAcOSCgf8UKq9YbpOmmsBiZamBnsflHPH1HH7vrTUZgFbxV4_6Kue0ZiO5lMaJf0rCZX45xz6LmsjtTz2RpL6FBzIcoU52SN1WqVNWzEbNbhmwavlersdQYGeP7_OBLR419PBnxaOJ_CECJ2h1sGjGGJyPZFqai7gfJ90T58_XYEfstWDLiG_64Xhl-cgw_m6vEl2FY7GpM6ot2L8M6G-tnwId-ohRhoPlRfqxiXGHXDU0JbrBbxbPptkfQJNNy2zOkzfW2H1T2AqVUoyxAS9HJm5r5Y6GFzl1U2re_7_KfIilVD8aroKBkjw"}}
+
+Friday 14th of April 2017 06:04:17 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 07:55:39 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 07:55:39 PM
+Client: oxd_socket_request628
+
+Friday 14th of April 2017 07:55:41 PM
+Client: oxd_socket_response0111{"status":"ok","data":{"oxd_id":"180d612b-6b7e-4619-a501-a753f3c92c28","op_host":"https://gluu.centroxy.com/"}}
+
+Friday 14th of April 2017 07:55:41 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 07:57:29 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 07:57:29 PM
+Client: oxd_socket_request629
+
+Friday 14th of April 2017 07:57:30 PM
+Client: oxd_socket_response0111{"status":"ok","data":{"oxd_id":"74ea2bad-4db3-4e4e-8e26-f8eb6983611a","op_host":"https://gluu.centroxy.com/"}}
+
+Friday 14th of April 2017 07:57:30 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 07:58:07 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 07:58:07 PM
+Client: oxd_socket_request651
+
+Friday 14th of April 2017 07:58:08 PM
+Client: oxd_socket_response0072{"status":"ok","data":{"oxd_id":"74ea2bad-4db3-4e4e-8e26-f8eb6983611a"}}
+
+Friday 14th of April 2017 07:58:08 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 07:58:14 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 07:58:14 PM
+Client: oxd_socket_request206
+
+Friday 14th of April 2017 07:58:14 PM
+Client: oxd_socket_response0368{"status":"ok","data":{"authorization_url":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/authorize?response_type=code&client_id=@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!329D.E277.B627.131A&redirect_uri=https://client.oxdtest.com/&scope=openid+profile+uma_protection+uma_authorization&state=6ut34o7ar65fdkqbkmoqrjdeaj&nonce=t6acu9hcgjj1l2glbj8mkc5uu"}}
+
+Friday 14th of April 2017 07:58:14 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 07:58:55 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 07:58:55 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 07:58:57 PM
+Client: oxd_socket_response1564{"status":"ok","data":{"access_token":"70184880-955c-43a0-b594-9a60f1d42c4d","expires_in":299,"id_token":"eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghMzI5RC5FMjc3LkI2MjcuMTMxQSIsImV4cCI6MTQ5MjE5NjM0MCwiaWF0IjoxNDkyMTkyNzQwLCJub25jZSI6InQ2YWN1OWhjZ2pqMWwyZ2xiajhta2M1dXUiLCJhdXRoX3RpbWUiOjE0OTIxOTI3MTIsImF0X2hhc2giOiJPSVFPSm9UTUVGNkRxaGRhODd0Zm13Iiwib3hWYWxpZGF0aW9uVVJJIjoiaHR0cHM6Ly9nbHV1LmNlbnRyb3h5LmNvbS9veGF1dGgvb3BpZnJhbWUiLCJveE9wZW5JRENvbm5lY3RWZXJzaW9uIjoib3BlbmlkY29ubmVjdC0xLjAiLCJzdWIiOiJrbUoySFVPZHE0LTRRYkh3TGZhZmNRSHNaeG5ycHdZaEQ5QXNFZEI0TFdFIn0.bqN_AfGpZ4R-Qwii092KAIzl3BKqRev0XOxLbt9ZlpDBztNWhLp5jfw-uvqcVXqpX2ar7fV02TUhOI4lCENISuQaJ2SHj7VR2vq4RDBsYPBwGmv4ud5Hs0W97EtYJeb7-YwwmhHQtvkHOx065Fj6fjTu7wgVo94t0kP3vMnEFsg5yz4Pcdm-DHh9EtNHKtB8JFB5ez00Dr2dYxoOKw7GnlIunwOgmXxZnwTsQSwWZVnjvQaZotEdEndtTikO4gARgPreR0LLIpYuqNGwv9qBregWp1kS3Tj7PmIyB_2ELFZIWoNnS7WW-TrFpmI_g5CPVh6fd8O422RdHw1-YdzG0A","refresh_token":"4f3b736e-d7ed-4c1b-99a8-44e5450b09a5","id_token_claims":{"auth_time":["1492192712"],"oxValidationURI":["https://gluu.centroxy.com/oxauth/opiframe"],"exp":["1492196340"],"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"at_hash":["OIQOJoTMEF6Dqhda87tfmw"],"nonce":["t6acu9hcgjj1l2glbj8mkc5uu"],"aud":["@!CACD.7C63.C37E.25F7!0001!5F7D.32DA!0008!329D.E277.B627.131A"],"iss":["https://gluu.centroxy.com"],"oxOpenIDConnectVersion":["openidconnect-1.0"],"iat":["1492192740"]}}}
+
+Friday 14th of April 2017 07:58:57 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 07:59:03 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 07:59:03 PM
+Client: oxd_socket_request144
+
+Friday 14th of April 2017 07:59:04 PM
+Client: oxd_socket_response0191{"status":"ok","data":{"claims":{"sub":["kmJ2HUOdq4-4QbHwLfafcQHsZxnrpwYhD9AsEdB4LWE"],"email":["sdash@centroxy.com"],"name":["Sampad"],"family_name":["Dash"],"given_name":["Sampadananda"]}}}
+
+Friday 14th of April 2017 07:59:04 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 14th of April 2017 07:59:23 PM
+Client: socket::socket_connectsocket connected
+
+Friday 14th of April 2017 07:59:23 PM
+Client: oxd_socket_request178
+
+Friday 14th of April 2017 07:59:23 PM
+Client: oxd_socket_response1083{"status":"ok","data":{"uri":"https://gluu.centroxy.com/oxauth/seam/resource/restv1/oxauth/end_session?id_token_hint=eyJraWQiOiJmMWZlNTY4Yi1kOTA0LTRjZDItYTEzYi0yZjg2MGYwNGE2ZjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2dsdXUuY2VudHJveHkuY29tIiwiYXVkIjoiQCFDQUNELjdDNjMuQzM3RS4yNUY3ITAwMDEhNUY3RC4zMkRBITAwMDghMzI5RC5FMjc3LkI2MjcuMTMxQSIsImV4cCI6MTQ5MjE5NjM0MCwiaWF0IjoxNDkyMTkyNzQwLCJub25jZSI6InQ2YWN1OWhjZ2pqMWwyZ2xiajhta2M1dXUiLCJhdXRoX3RpbWUiOjE0OTIxOTI3MTIsImF0X2hhc2giOiJPSVFPSm9UTUVGNkRxaGRhODd0Zm13Iiwib3hWYWxpZGF0aW9uVVJJIjoiaHR0cHM6Ly9nbHV1LmNlbnRyb3h5LmNvbS9veGF1dGgvb3BpZnJhbWUiLCJveE9wZW5JRENvbm5lY3RWZXJzaW9uIjoib3BlbmlkY29ubmVjdC0xLjAiLCJzdWIiOiJrbUoySFVPZHE0LTRRYkh3TGZhZmNRSHNaeG5ycHdZaEQ5QXNFZEI0TFdFIn0.bqN_AfGpZ4R-Qwii092KAIzl3BKqRev0XOxLbt9ZlpDBztNWhLp5jfw-uvqcVXqpX2ar7fV02TUhOI4lCENISuQaJ2SHj7VR2vq4RDBsYPBwGmv4ud5Hs0W97EtYJeb7-YwwmhHQtvkHOx065Fj6fjTu7wgVo94t0kP3vMnEFsg5yz4Pcdm-DHh9EtNHKtB8JFB5ez00Dr2dYxoOKw7GnlIunwOgmXxZnwTsQSwWZVnjvQaZotEdEndtTikO4gARgPreR0LLIpYuqNGwv9qBregWp1kS3Tj7PmIyB_2ELFZIWoNnS7WW-TrFpmI_g5CPVh6fd8O422RdHw1-YdzG0A"}}
+
+Friday 14th of April 2017 07:59:23 PM
+Client: oxd_socket_connectiondisconnected.

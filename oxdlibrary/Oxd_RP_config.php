@@ -65,6 +65,11 @@
     public static $op_host;
     /**
      * @static
+     * @var int $oxd_host_port        Socket connection host
+     */
+    public static $oxd_host;
+    /**
+     * @static
      * @var int $oxd_host_port        Socket connection port
      */
     public static $oxd_host_port;
