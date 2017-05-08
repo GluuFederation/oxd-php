@@ -1,7 +1,7 @@
 <?php
     require_once './utils.php';
     require_once './oxdlibrary/Logout.php';
-    
+    $config = include('./oxdlibrary/oxdHttpConfig.php');
     
     if(checkOxdId())
     {
@@ -9,7 +9,10 @@
         try{
             $get_logout_uri = new Logout();
             $get_logout_uri->setRequestOxdId($oxdId);
-            $get_logout_uri->request();
+//	    This is for OXD Socket
+//            $get_logout_uri->request();
+//	    This is for OXD-TO-HTTP
+            $get_logout_uri->request($config["host"].$config[$get_logout_uri->getCommand()]);
             $data["logoutUri"] = $get_logout_uri->getResponseObject()->data->uri;
             echo json_encode($data);
         }

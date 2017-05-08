@@ -1,7 +1,7 @@
 <?php
     require_once './utils.php';
     require_once './oxdlibrary/Update_site_registration.php';
-    
+    $config = include('./oxdlibrary/oxdHttpConfig.php');
     
     if(checkOxdId())
     {
@@ -17,8 +17,10 @@
             $update_site_registration->setRequestGrantTypes(Oxd_RP_config::$grant_types);
             $update_site_registration->setRequestResponseTypes(Oxd_RP_config::$response_types);
             $update_site_registration->setRequestScope(Oxd_RP_config::$scope);
-            
-            $update_site_registration->request();
+//	    This is for OXD Socket
+//            $update_site_registration->request();
+//	    This is for OXD-TO-HTTP
+            $update_site_registration->request($config["host"].$config[$update_site_registration->getCommand()]);
             echo "{\"status\":\"ok\"}";
         }
         catch(Exception $e){

@@ -130,6 +130,18 @@
                     var dataJson = JSON.parse(data);
                     jQuery("#accessToken").val(dataJson.accessToken);
                     jQuery("#refreshToken").val(dataJson.refreshToken);
+                    var html = "<li class=\"list-group-item\" style=\"overflow:auto;\">idToken : "+dataJson.idToken+"</li>";
+                    html += "<li class=\"list-group-item\" style=\"overflow:auto;\">at_hash : "+dataJson.idTokenClaims.at_hash[0]+"</li>";
+                    html += "<li class=\"list-group-item\" style=\"overflow:auto;\">aud : "+dataJson.idTokenClaims.aud[0]+"</li>";
+                    html += "<li class=\"list-group-item\" style=\"overflow:auto;\">sub : "+dataJson.idTokenClaims.sub[0]+"</li>";
+                    html += "<li class=\"list-group-item\" style=\"overflow:auto;\">auth_time : "+dataJson.idTokenClaims.auth_time[0]+"</li>";
+                    html += "<li class=\"list-group-item\" style=\"overflow:auto;\">iss : "+dataJson.idTokenClaims.iss[0]+"</li>";
+                    html += "<li class=\"list-group-item\" style=\"overflow:auto;\">exp : "+dataJson.idTokenClaims.exp[0]+"</li>";
+                    html += "<li class=\"list-group-item\" style=\"overflow:auto;\">iat : "+dataJson.idTokenClaims.iat[0]+"</li>";
+                    html += "<li class=\"list-group-item\" style=\"overflow:auto;\">nonce : "+dataJson.idTokenClaims.nonce[0]+"</li>";
+                    html += "<li class=\"list-group-item\" style=\"overflow:auto;\">oxValidationURI : "+dataJson.idTokenClaims.oxValidationURI[0]+"</li>";
+                    html += "<li class=\"list-group-item\" style=\"overflow:auto;\">oxOpenIDConnectVersion : "+dataJson.idTokenClaims.oxOpenIDConnectVersion[0]+"</li>";
+                    jQuery("#tokens").html(html);
                     notify("Token retrival is successful.", "success");
 
                     jQuery("#btnUser").prop("disabled", false);
@@ -364,6 +376,10 @@
             </div>
         </form>
     </div>
+    <div class="col-md-12">
+        <ul class="list-group" id="tokens">
+        </ul>
+    </div>
 
     <div class="col-md-12">
         <h2>Getting User Info</h2>
@@ -425,7 +441,7 @@
             <div class="form-group">
                 <label for="logoutUri" class="col-sm-2 control-label">Logout URI</label>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" id="logoutUri" placeholder="logout uri" disabled="disabled">
+                    <input type="text" class="form-control" id="logoutUri" placeholder="logout uri">
                 </div>
             </div>
         </form>

@@ -1,6 +1,7 @@
 <?php
     require_once './utils.php';
     require_once './oxdlibrary/Register_site.php';
+    $config = include('./oxdlibrary/oxdHttpConfig.php');
 
     if(!checkOxdId())
     {
@@ -14,7 +15,10 @@
             $register_site->setRequestGrantTypes(Oxd_RP_config::$grant_types);
             $register_site->setRequestResponseTypes(Oxd_RP_config::$response_types);
             $register_site->setRequestScope(Oxd_RP_config::$scope);
-            $register_site->request();
+//	    This is for OXD Socket
+//            $register_site->request();
+//	    This is for OXD-TO-HTTP
+            $register_site->request($config["host"].$config[$register_site->getCommand()]);
             setOxdId($register_site->getResponseOxdId());
             $data["status"] = "ok";
             echo json_encode($data);
