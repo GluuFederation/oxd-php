@@ -125,7 +125,7 @@ return [
     {
         setRedirectUrl($_REQUEST['redirectUrl']);
         try{
-            $register_site = new Register_site();
+            $register_site = new Register_site($config);
             $register_site->setRequestOpHost(Oxd_RP_config::$op_host);
             $register_site->setRequestAcrValues(Oxd_RP_config::$acr_values);
             $register_site->setRequestAuthorizationRedirectUri(Oxd_RP_config::$authorization_redirect_uri);
@@ -133,7 +133,7 @@ return [
             $register_site->setRequestGrantTypes(Oxd_RP_config::$grant_types);
             $register_site->setRequestResponseTypes(Oxd_RP_config::$response_types);
             $register_site->setRequestScope(Oxd_RP_config::$scope);
-            $register_site->request($config["host"].$config[$register_site->getCommand()]);
+            $register_site->request();
             setOxdId($register_site->getResponseOxdId());
             $data["status"] = "ok";
             echo json_encode($data);
@@ -168,6 +168,7 @@ return [
         setRedirectUrl($_REQUEST['redirectUrl']);
         try{
             $register_site = new Register_site();
+            $register_site = new Register_site($config);
             $register_site->setRequestOpHost(Oxd_RP_config::$op_host);
             $register_site->setRequestAcrValues(Oxd_RP_config::$acr_values);
             $register_site->setRequestAuthorizationRedirectUri(Oxd_RP_config::$authorization_redirect_uri);
@@ -210,8 +211,7 @@ return [
     {
         $oxdId = getOxdId();
         try{
-            $update_site_registration = new Update_site_registration();
-            
+            $update_site_registration = new Update_site_registration($config);
             $update_site_registration->setRequestAcrValues(Oxd_RP_config::$acr_values);
             $update_site_registration->setRequestOxdId($oxdId);
             $update_site_registration->setRequestAuthorizationRedirectUri(Oxd_RP_config::$authorization_redirect_uri);
@@ -220,7 +220,7 @@ return [
             $update_site_registration->setRequestGrantTypes(Oxd_RP_config::$grant_types);
             $update_site_registration->setRequestResponseTypes(Oxd_RP_config::$response_types);
             $update_site_registration->setRequestScope(Oxd_RP_config::$scope);
-            $update_site_registration->request($config["host"].$config[$update_site_registration->getCommand()]);
+            $update_site_registration->request();
             echo "{\"status\":\"ok\"}";
         }
         catch(Exception $e){
@@ -249,8 +249,7 @@ return [
     {
         $oxdId = getOxdId();
         try{
-            $update_site_registration = new Update_site_registration();
-            
+			$update_site_registration = new Update_site_registration();
             $update_site_registration->setRequestAcrValues(Oxd_RP_config::$acr_values);
             $update_site_registration->setRequestOxdId($oxdId);
             $update_site_registration->setRequestAuthorizationRedirectUri(Oxd_RP_config::$authorization_redirect_uri);
@@ -288,11 +287,11 @@ return [
     {
         $oxdId = getOxdId();
         try{
-            $get_authorization_url = new Get_authorization_url();
+            $get_authorization_url = new Get_authorization_url($config);
             $get_authorization_url->setRequestOxdId($oxdId);
             $get_authorization_url->setRequestScope(Oxd_RP_config::$scope);
             $get_authorization_url->setRequestAcrValues(Oxd_RP_config::$acr_values);
-            $get_authorization_url->request($config["host"].$config[$get_authorization_url->getCommand()]);
+            $get_authorization_url->request();
             echo "{\"authorizationUrl\":\"".$get_authorization_url->getResponseAuthorizationUrl()."\"}";
         }
         catch(Exception $e){
@@ -352,11 +351,11 @@ return [
     {
         $oxdId = getOxdId();
         try{
-            $get_tokens_by_code = new Get_tokens_by_code();
+            $get_tokens_by_code = new Get_tokens_by_code($config);
             $get_tokens_by_code->setRequestOxdId($oxdId);
             $get_tokens_by_code->setRequestCode($_REQUEST['authCode']);
             $get_tokens_by_code->setRequestState($_REQUEST['authState']);
-            $get_tokens_by_code->request($config["host"].$config[$get_tokens_by_code->getCommand()]);
+            $get_tokens_by_code->request();
             $data['accessToken'] = $get_tokens_by_code->getResponseAccessToken();
             $data['refreshToken'] = $get_tokens_by_code->getResponseRefreshToken();
             $data['idToken'] = $get_tokens_by_code->getResponseIdToken();
@@ -388,11 +387,11 @@ return [
     {
         $oxdId = getOxdId();
         try{
-            $get_tokens_by_code = new Get_tokens_by_code();
+			$get_tokens_by_code = new Get_tokens_by_code();
             $get_tokens_by_code->setRequestOxdId($oxdId);
             $get_tokens_by_code->setRequestCode($_REQUEST['authCode']);
             $get_tokens_by_code->setRequestState($_REQUEST['authState']);
-            $get_tokens_by_code->request($config["host"].$config[$get_tokens_by_code->getCommand()]);
+            $get_tokens_by_code->request();
             $data['accessToken'] = $get_tokens_by_code->getResponseAccessToken();
             $data['refreshToken'] = $get_tokens_by_code->getResponseRefreshToken();
             $data['idToken'] = $get_tokens_by_code->getResponseIdToken();
@@ -424,10 +423,10 @@ return [
     {
         $oxdId = getOxdId();
         try{
-            $get_user_info = new Get_user_info();
+            $get_user_info = new Get_user_info($config);
             $get_user_info->setRequestOxdId($oxdId);
             $get_user_info->setRequestAccessToken($_REQUEST['accessToken']);
-            $get_user_info->request($config["host"].$config[$get_user_info->getCommand()]);
+            $get_user_info->request();
             $data = $get_user_info->getResponseClaims();
             $response['userEmail'] = $data->email[0];
             $response['userName'] = $data->name[0];
@@ -458,7 +457,7 @@ return [
     {
         $oxdId = getOxdId();
         try{
-            $get_user_info = new Get_user_info();
+			$get_user_info = new Get_user_info();
             $get_user_info->setRequestOxdId($oxdId);
             $get_user_info->setRequestAccessToken($_REQUEST['accessToken']);
             $get_user_info->request();
@@ -492,9 +491,9 @@ return [
     {
         $oxdId = getOxdId();
         try{
-            $get_logout_uri = new Logout();
+            $get_logout_uri = new Logout($config);
             $get_logout_uri->setRequestOxdId($oxdId);
-            $get_logout_uri->request($config["host"].$config[$get_logout_uri->getCommand()]);
+            $get_logout_uri->request();
             $data["logoutUri"] = $get_logout_uri->getResponseObject()->data->uri;
             echo json_encode($data);
         }
@@ -523,7 +522,7 @@ return [
     {
         $oxdId = getOxdId();
         try{
-            $get_logout_uri = new Logout();
+			$get_logout_uri = new Logout();
             $get_logout_uri->setRequestOxdId($oxdId);
             $get_logout_uri->request();
             $data["logoutUri"] = $get_logout_uri->getResponseObject()->data->uri;
