@@ -70,6 +70,10 @@
 	     * @var string $base_url      Base url for log file directory and oxd-rp-setting.json file.
 	     */
 	    protected  $base_url = __DIR__;
+            /**
+	     * @var string $url      Url for oxd-to-http.
+	     */
+	    private  $url = null;
 	
 	    /**
 	     * Constructor
@@ -90,12 +94,14 @@
 	        }
 	        $configOBJECT = json_decode($configJSON);
 	        $this->define_variables($configOBJECT);
-	
-	        if(is_int(Oxd_RP_config::$oxd_host_port) && Oxd_RP_config::$oxd_host_port>=0 && Oxd_RP_config::$oxd_host_port<=65535){
-	
-	        }else{
-	            $this->error_message(Oxd_RP_config::$oxd_host_port."is not a valid port for socket. Port must be integer and between from 0 to 65535.");
-	        }
+                if(!$this->url)
+                {
+                    if(is_int(Oxd_RP_config::$oxd_host_port) && Oxd_RP_config::$oxd_host_port>=0 && Oxd_RP_config::$oxd_host_port<=65535){
+
+                    }else{
+                        $this->error_message(Oxd_RP_config::$oxd_host_port."is not a valid port for socket. Port must be integer and between from 0 to 65535.");
+                    }
+                }
 	    }
 	
 	    /**
@@ -200,7 +206,15 @@
 	        file_put_contents($OldFile, $person, FILE_APPEND | LOCK_EX);
 	
 	    }
-	
+            
+            
+            function getUrl() {
+                return $this->url;
+            }
+
+            function setUrl($url = null) {
+                $this->url = $url;
+            }
 	
 	
 	}

@@ -140,7 +140,7 @@
 	     * command (dict) - Dict representation of the JSON command string
 	     * @return	void
 	     **/
-	    public function request($url=null)
+	    public function request()
 	    {
 	        $this->setParams();
 	
@@ -158,16 +158,15 @@
 	            $lenght = $lenght <= 999 ? "0" . $lenght : $lenght;
 	        }
                 
-                if($url!=null)
+                if(Client_Socket_OXD_RP::getUrl() != null)
                 {
                     $jsonHttpData = json_encode($this->getData()["params"]);
-                    $this->response_json = $this->oxd_http_request($url,$jsonHttpData);
+                    $this->response_json = $this->oxd_http_request(Client_Socket_OXD_RP::getUrl(),$jsonHttpData);
                 }
                 else{
                     $this->response_json = $this->oxd_socket_request(utf8_encode($lenght . $jsondata));
                     $this->response_json = str_replace(substr($this->response_json, 0, 4), "", $this->response_json);
                 }
-	
 	        if ($this->response_json) {
 	            $object = json_decode($this->response_json);
 	            if ($object->status == 'error') {
