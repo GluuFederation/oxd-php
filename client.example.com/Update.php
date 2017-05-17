@@ -7,8 +7,10 @@
     {
         $oxdId = getOxdId();
         try{
-            $update_site_registration = new Update_site_registration();
-            
+//	    This is for OXD Socket
+//            $update_site_registration = new Update_site_registration();
+//	    This is for OXD-TO-HTTP
+            $update_site_registration = new Update_site_registration($config);
             $update_site_registration->setRequestAcrValues(Oxd_RP_config::$acr_values);
             $update_site_registration->setRequestOxdId($oxdId);
             $update_site_registration->setRequestAuthorizationRedirectUri(Oxd_RP_config::$authorization_redirect_uri);
@@ -17,10 +19,7 @@
             $update_site_registration->setRequestGrantTypes(Oxd_RP_config::$grant_types);
             $update_site_registration->setRequestResponseTypes(Oxd_RP_config::$response_types);
             $update_site_registration->setRequestScope(Oxd_RP_config::$scope);
-//	    This is for OXD Socket
-//            $update_site_registration->request();
-//	    This is for OXD-TO-HTTP
-            $update_site_registration->request($config["host"].$config[$update_site_registration->getCommand()]);
+            $update_site_registration->request();
             echo "{\"status\":\"ok\"}";
         }
         catch(Exception $e){

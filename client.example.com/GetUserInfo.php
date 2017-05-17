@@ -7,13 +7,13 @@
     {
         $oxdId = getOxdId();
         try{
-            $get_user_info = new Get_user_info();
+//	    This is for OXD Socket
+//            $get_user_info = new Get_user_info();
+//	    This is for OXD-TO-HTTP
+            $get_user_info = new Get_user_info($config);
             $get_user_info->setRequestOxdId($oxdId);
             $get_user_info->setRequestAccessToken($_REQUEST['accessToken']);
-//	    This is for OXD Socket
-//            $get_user_info->request();
-//	    This is for OXD-TO-HTTP
-            $get_user_info->request($config["host"].$config[$get_user_info->getCommand()]);
+            $get_user_info->request();
             $data = $get_user_info->getResponseClaims();
             $response['userEmail'] = $data->email[0];
             $response['userName'] = $data->name[0];

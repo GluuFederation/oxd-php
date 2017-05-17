@@ -7,14 +7,14 @@
     {
         $oxdId = getOxdId();
         try{
-            $get_tokens_by_code = new Get_tokens_by_code();
+//	    This is for OXD Socket
+//            $get_tokens_by_code = new Get_tokens_by_code();
+//	    This is for OXD-TO-HTTP
+            $get_tokens_by_code = new Get_tokens_by_code($config);
             $get_tokens_by_code->setRequestOxdId($oxdId);
             $get_tokens_by_code->setRequestCode($_REQUEST['authCode']);
             $get_tokens_by_code->setRequestState($_REQUEST['authState']);
-//	    This is for OXD Socket
-//            $get_tokens_by_code->request();
-//	    This is for OXD-TO-HTTP
-            $get_tokens_by_code->request($config["host"].$config[$get_tokens_by_code->getCommand()]);
+            $get_tokens_by_code->request();
             $data['accessToken'] = $get_tokens_by_code->getResponseAccessToken();
             $data['refreshToken'] = $get_tokens_by_code->getResponseRefreshToken();
             $data['idToken'] = $get_tokens_by_code->getResponseIdToken();
