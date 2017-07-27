@@ -7,7 +7,7 @@
     {
         $oxdId = getOxdId();
         try{
-//	    This is for OXD Socket
+//	    This is for OXD Socket (HTTPS)
 //            $get_logout_uri = new Logout();
 //	    This is for OXD-TO-HTTP
             $get_logout_uri = new Logout($config);

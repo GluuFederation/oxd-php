@@ -7,7 +7,7 @@
     {
         $oxdId = getOxdId();
         try{
-//	    This is for OXD Socket
+//	    This is for OXD Socket (HTTPS)
 //            $get_authorization_url = new Get_authorization_url();
 //	    This is for OXD-TO-HTTP
             $get_authorization_url = new Get_authorization_url($config);

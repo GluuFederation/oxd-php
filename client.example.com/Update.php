@@ -7,7 +7,7 @@
     {
         $oxdId = getOxdId();
         try{
-//	    This is for OXD Socket
+//	    This is for OXD Socket (HTTPS)
 //            $update_site_registration = new Update_site_registration();
 //	    This is for OXD-TO-HTTP
             $update_site_registration = new Update_site_registration($config);
