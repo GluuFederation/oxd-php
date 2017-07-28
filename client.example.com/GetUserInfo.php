@@ -7,7 +7,7 @@
     {
         $oxdId = getOxdId();
         try{
-//	    This is for OXD Socket (HTTPS)
+//	    This is for OXD Socket
 //            $get_user_info = new Get_user_info();
 //	    This is for OXD-TO-HTTP
             $get_user_info = new Get_user_info($config);
