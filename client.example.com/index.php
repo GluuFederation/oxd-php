@@ -38,6 +38,8 @@
                     jQuery("#btnUpdate").prop("disabled", false);
                     var dataJson = JSON.parse(data);
                     
+                    // To register a new client, you must first edit oxdId.json
+                    // and change oxd_id to an empty string, then save and quit.
                     if (dataJson.status === "done")
                     {
                         notify("You have already registered.", "info");
@@ -68,6 +70,7 @@
                     {
                         notify("Site update is successful.", "success");
 
+                        jQuery("#authUrl").prop("disabled", false);
                         jQuery("#btnAuthUrl").prop("disabled", false);
                     }
                     else
