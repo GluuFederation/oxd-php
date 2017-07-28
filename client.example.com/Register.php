@@ -7,7 +7,7 @@
     {
         setRedirectUrl($_REQUEST['redirectUrl']);
         try{
-//	    This is for OXD Socket (HTTPS)
+//	    This is for OXD Socket
 //            $register_site = new Register_site();
 //	    This is for OXD-TO-HTTP
             $register_site = new Register_site($config);
