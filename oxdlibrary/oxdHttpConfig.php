@@ -7,7 +7,14 @@ return [
     'get_tokens_by_code' => "get-tokens-by-code",
     'get_user_info' => "get-user-info",
     'register_site' => "register-site",
-    'get_logout_uri' => "logout"
+    'setup_client' => "setup-client",
+    'get_logout_uri' => "get-logout-uri",
+    'get_client_token' => 'get-client-token',
+    'get_access_token_by_refresh_token' => 'get-access-token-by-refresh-token',
+    'uma_rs_protect' => 'uma-rs-protect',
+    'uma_rs_check_access' => 'uma-rs-check-access',
+    'uma_rp_get_rpt' => 'uma-rp-get-rpt',
+    'uma_rp_get_claims_gathering_url' => 'uma-rp-get-claims-gathering-url'
 ];
 ?>
 

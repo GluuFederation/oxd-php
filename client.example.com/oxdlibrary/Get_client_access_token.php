@@ -47,7 +47,7 @@
 	 */
 
 	/**
-	 * Client Register_site class
+	 * Client Setup_client class
 	 *
 	 * Class is connecting to oxd-server via socket, and registering site in gluu server.
 	 *
@@ -61,9 +61,10 @@
 	require_once 'Client_Socket_OXD_RP.php';
 	require_once 'Client_OXD_RP.php';
         
-	class Register_site extends Client_OXD_RP
+	class Get_client_access_token extends Client_OXD_RP
 	{
-	    /**
+            
+            /**
 	     * @var string $request_op_host                         Gluu server url
 	     */
 	    private $request_op_host = null;
@@ -72,19 +73,11 @@
 	     */
 	    private $request_authorization_redirect_uri = null;
 	    /**
-	     * @var string $request_client_id                       OpenID provider client id
-	     */
-	    private $request_client_id = null;
-	    /**
 	     * @var string $request_client_name                     OpenID provider client name
 	     */
 	    private $request_client_name = null;
 	    /**
-	     * @var string $request_authorization_redirect_uri      OpenID provider client secret
-	     */
-	    private $request_client_secret = null;
-	    /**
-	     * @var string $request_post_logout_redirect_uri             Site logout redirect uri
+             *  @var string $request_post_logout_redirect_uri             Site logout redirect uri
 	     */
 	    private $request_post_logout_redirect_uri = null;
 	    /**
@@ -140,21 +133,100 @@
 	     */
 	    private $request_claims_locales = null;
 	    /**
-	     * Response parameter from oxd-server
-	     * It is basic parameter for other protocols
-	     *
-	     * @var string $response_oxd_id
+	     * @var string $request_op_host                         Gluu server url
 	     */
-	    private $response_oxd_id;
-	
+	    private $request_oxd_id;
+            
 	    /**
+	     * @var string $request_client_id                       OpenID provider client id
+	     */
+	    private $request_client_id = null;
+            
+	    /**
+	     * @var string $request_authorization_redirect_uri      OpenID provider client secret
+	     */
+	    private $request_client_secret = null;
+            /**
 	     * Response parameter from oxd-server
 	     *
-	     * @var string $response_op_host
+	     * @var string $response_access_token
 	     */
-	    private $response_op_host;
-	
-	    /**
+            private $response_access_token;
+            
+            private $response_scope;
+            
+            private $response_expires_in;
+            
+            private $response_refresh_token;
+            
+            function getResponse_scope() {
+                $this->response_scope = $this->response_object->data->scope;
+                return $this->response_scope;
+            }
+
+            function getResponse_expires_in() {
+                $this->response_expires_in = $this->response_object->data->expires_in;
+                return $this->response_expires_in;
+            }
+
+            function getResponse_refresh_token() {
+                $this->response_refresh_token = $this->response_object->data->refresh_token;
+                return $this->response_refresh_token;
+            }
+
+            function setResponse_scope($response_scope) {
+                $this->response_scope = $response_scope;
+            }
+
+            function setResponse_expires_in($response_expires_in) {
+                $this->response_expires_in = $response_expires_in;
+            }
+
+            function setResponse_refresh_token($response_refresh_token) {
+                $this->response_refresh_token = $response_refresh_token;
+            }
+            
+            function getResponse_access_token() {
+                $this->response_access_token = $this->response_object->data->access_token;
+                return $this->response_access_token;
+            }
+
+            function setResponse_access_token($response_access_token) {
+                $this->response_access_token = $response_access_token;
+            }
+            function getRequest_oxd_id() {
+                return $this->request_oxd_id;
+            }
+
+            function getRequest_client_id() {
+                return $this->request_client_id;
+            }
+
+            function getRequest_client_secret() {
+                return $this->request_client_secret;
+            }
+
+            function setRequest_oxd_id($request_oxd_id) {
+                $this->request_oxd_id = $request_oxd_id;
+            }
+
+            function setRequest_client_id($request_client_id) {
+                $this->request_client_id = $request_client_id;
+            }
+
+            function setRequest_client_secret($request_client_secret) {
+                $this->request_client_secret = $request_client_secret;
+            }
+            
+            function getRequest_client_name() {
+                return $this->request_client_name;
+            }
+
+            function setRequest_client_name($request_client_name) {
+                $this->request_client_name = $request_client_name;
+            }
+
+                        	    /**
 	     * Constructor
 	     *
 	     * @return	void
@@ -162,61 +234,12 @@
 	    public function __construct($config = null)
 	    {
                 if(is_array($config)){
-                    Client_Socket_OXD_RP::setUrl($config["host"].$config["register_site"]);
+                    Client_Socket_OXD_RP::setUrl(substr($config["host"], -1) !== '/'?$config["host"]."/".$config["get_client_token"]:$config["host"].$config["get_client_token"]);
                 }
 	        parent::__construct(); // TODO: Change the autogenerated stub
-	        $this->setRequestApplicationType();
 	    }
-	
-	    /**
-	     * @return string
-	     */
-	    public function getRequestClientName()
-	    {
-	        return $this->request_client_name;
-	    }
-	
-	    /**
-	     * @param string $request_client_name
-	     */
-	    public function setRequestClientName($request_client_name)
-	    {
-	        $this->request_client_name = $request_client_name;
-	    }
-	
-	    /**
-	     * @return string
-	     */
-	    public function getRequestClientSecret()
-	    {
-	        return $this->request_client_secret;
-	    }
-	
-	    /**
-	     * @param string $request_client_secret
-	     */
-	    public function setRequestClientSecret($request_client_secret)
-	    {
-	        $this->request_client_secret = $request_client_secret;
-	    }
-	
-	    /**
-	     * @return string
-	     */
-	    public function getRequestClientId()
-	    {
-	        return $this->request_client_id;
-	    }
-	
-	    /**
-	     * @param string $request_client_id
-	     */
-	    public function setRequestClientId($request_client_id)
-	    {
-	        $this->request_client_id = $request_client_id;
-	    }
-	
-	    /**
+            
+            /**
 	     * @return string
 	     */
 	    public function getRequestOpHost()
@@ -508,8 +531,10 @@
 	     */
 	    public function setCommand()
 	    {
-	        $this->command = 'register_site';
+	        $this->command = 'get_client_token';
 	    }
+
+                        
 	    /**
 	     * Protocol parameter to oxd server
 	     * @return void
@@ -517,7 +542,7 @@
 	    public function setParams()
 	    {
 	        $this->params = array(
-	            "authorization_redirect_uri" => $this->getRequestAuthorizationRedirectUri(),
+                    "authorization_redirect_uri" => $this->getRequestAuthorizationRedirectUri(),
 	            "op_host" => $this->getRequestOpHost(),
 	            "post_logout_redirect_uri" => $this->getRequestPostLogoutRedirectUri(),
 	            "application_type" => $this->getRequestApplicationType(),
@@ -525,7 +550,7 @@
 	            "grant_types" => $this->getRequestGrantTypes(),
 	            "scope" => $this->getRequestScope(),
 	            "acr_values" => $this->getRequestAcrValues(),
-	            "client_name"=> $this->getRequestClientName(),
+	            "client_name"=> $this->getRequest_client_name(),
 	            "client_jwks_uri" => $this->getRequestClientJwksUri(),
 	            "client_token_endpoint_auth_method" => $this->getRequestClientTokenEndpointAuthMethod(),
 	            "client_request_uris" => $this->getRequestClientRequestUris(),
@@ -533,8 +558,9 @@
 	            "contacts" => $this->getRequestContacts(),
 	            "ui_locales" => $this->getRequestUiLocales(),
 	            "claims_locales" => $this->getRequestClaimsLocales(),
-	            "client_id"=> $this->getRequestClientId(),
-	            "client_secret"=> $this->getRequestClientSecret(),
+	            "oxd_id" => $this->getRequest_oxd_id(),
+	            "client_id"=> $this->getRequest_client_id(),
+                    "client_secret"=>$this->getRequest_client_secret(),
 	            "client_frontchannel_logout_uris"=> $this->getRequestClientLogoutUris(),
                     "claims_redirect_uri"=> $this->getRequestClaimsRedirectUri(),
                     "oxd_rp_programming_language" => 'php'

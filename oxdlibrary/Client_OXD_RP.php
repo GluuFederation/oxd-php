@@ -78,6 +78,10 @@
 	                                    'uma_rp_get_rpt',
 	                                    'uma_rp_authorize_rpt',
 	                                    'uma_rp_get_gat',
+                                            'setup_client',
+                                            'get_client_token',
+                                            'get_access_token_by_refresh_token',
+                                            'uma_rp_get_claims_gathering_url'
 	    );
 	    /**
 	     * @var string $command             Extend class protocol command name, for sending oxd-server
@@ -140,7 +144,7 @@
 	     * command (dict) - Dict representation of the JSON command string
 	     * @return	void
 	     **/
-	    public function request()
+	    public function request($url="")
 	    {
 	        $this->setParams();
 	
@@ -157,11 +161,9 @@
 	        }else{
 	            $lenght = $lenght <= 999 ? "0" . $lenght : $lenght;
 	        }
-                
-                if(Client_Socket_OXD_RP::getUrl() != null)
-                {
-                    $jsonHttpData = json_encode($this->getData()["params"]);
-                    $this->response_json = $this->oxd_http_request(Client_Socket_OXD_RP::getUrl(),$jsonHttpData);
+                if(Client_Socket_OXD_RP::getUrl() != null || $url != ""){
+                    $jsonHttpData = $this->getData()["params"];
+                    $this->response_json = $this->oxd_http_request(Client_Socket_OXD_RP::getUrl()?Client_Socket_OXD_RP::getUrl():$url,$jsonHttpData);
                 }
                 else{
                     $this->response_json = $this->oxd_socket_request(utf8_encode($lenght . $jsondata));

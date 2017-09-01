@@ -119,6 +119,7 @@
 	        Oxd_RP_config::$response_types = $configOBJECT->response_types;
 	        Oxd_RP_config::$grant_types = $configOBJECT->grant_types;
 	        Oxd_RP_config::$acr_values = $configOBJECT->acr_values;
+                Oxd_RP_config::$conn_type = $configOBJECT->conn_type;
 	
 	    }
 	    /**
@@ -156,6 +157,11 @@
 	     * @return object
 	     */
 	    public function oxd_http_request($url,$data){
+                $headers = ["Content-type: application/json"];
+                if(array_key_exists('protection_access_token',$data)){
+                    $headers[] = "Authorization: Bearer ".$data['protection_access_token'];
+                    unset($data['protection_access_token']);
+                }
 	        $curl = curl_init($url);
                 curl_setopt($curl, CURLOPT_HEADER, false);
                 //Remove these lines while using real https instead of self signed
@@ -164,9 +170,9 @@
                 //remove above 2 lines
                 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
                 curl_setopt($curl, CURLOPT_HTTPHEADER,
-                        array("Content-type: application/json"));
+                        $headers);
                 curl_setopt($curl, CURLOPT_POST, true);
-                curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+                curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data,true));
 
                 $json_response = curl_exec($curl);
 

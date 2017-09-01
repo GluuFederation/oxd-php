@@ -1,0 +1,306 @@
+
+Friday 1st of September 2017 07:56:36 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 07:56:36 PM
+Client: oxd_socket_request771
+
+Friday 1st of September 2017 07:56:40 PM
+Client: oxd_socket_response0546{"status":"ok","data":{"oxd_id":"c4232cee-01bd-48b9-a2f7-a2088acfaa0d","op_host":"https://iam310.centroxy.com","client_id":"@!E64E.B7E6.3AC4.6CB9!0001!C05E.F402!0008!CFF7.55CB.3890.5398","client_secret":"89167c10-f12d-4fb3-9aa4-bbb8b7c9e2ae","client_registration_access_token":"be2a1dc0-175e-4075-88e5-033a0b6107fd","client_registration_client_uri":"https://iam310.centroxy.com/oxauth/restv1/register?client_id=@!E64E.B7E6.3AC4.6CB9!0001!C05E.F402!0008!CFF7.55CB.3890.5398","client_id_issued_at":1504288602,"client_secret_expires_at":1504375002}}
+
+Friday 1st of September 2017 07:56:40 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 07:56:41 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 07:56:41 PM
+Client: oxd_socket_request771
+
+Friday 1st of September 2017 07:56:43 PM
+Client: oxd_socket_response0546{"status":"ok","data":{"oxd_id":"d981fec5-9e62-4bf7-b39d-11e8a72b4ddd","op_host":"https://iam310.centroxy.com","client_id":"@!E64E.B7E6.3AC4.6CB9!0001!C05E.F402!0008!1925.CC57.CD0D.4060","client_secret":"3b56fa5f-790a-436c-a3df-bcb4111f6a70","client_registration_access_token":"4a72017f-2e1c-4191-9627-4ca89a03431b","client_registration_client_uri":"https://iam310.centroxy.com/oxauth/restv1/register?client_id=@!E64E.B7E6.3AC4.6CB9!0001!C05E.F402!0008!1925.CC57.CD0D.4060","client_id_issued_at":1504288606,"client_secret_expires_at":1504375006}}
+
+Friday 1st of September 2017 07:56:43 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:00:25 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:00:25 PM
+Client: oxd_socket_request908
+
+Friday 1st of September 2017 08:00:26 PM
+Client: oxd_socket_response0180{"status":"ok","data":{"scope":"openid profile uma_protection uma_authorization email","access_token":"cf9e2d69-f033-465c-bd65-4b9a30e91988","expires_in":299,"refresh_token":null}}
+
+Friday 1st of September 2017 08:00:26 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:00:26 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:00:26 PM
+Client: oxd_socket_request279
+
+Friday 1st of September 2017 08:00:28 PM
+Client: oxd_socket_response0375{"status":"ok","data":{"authorization_url":"https://iam310.centroxy.com/oxauth/restv1/authorize?response_type=code&client_id=@!E64E.B7E6.3AC4.6CB9!0001!C05E.F402!0008!20D9.7DAE.C570.AE77&redirect_uri=https://node.oxdexample.com/login_redirect.php&scope=openid+profile+email+uma_protection+uma_authorization&state=47qkg41rjk54einfmgrgb02j9i&nonce=r64iboq101suf5o9lbpme2hu30"}}
+
+Friday 1st of September 2017 08:00:28 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:00:53 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:00:53 PM
+Client: oxd_socket_request908
+
+Friday 1st of September 2017 08:00:54 PM
+Client: oxd_socket_response0180{"status":"ok","data":{"scope":"openid profile uma_protection uma_authorization email","access_token":"a6acad3f-2acb-4dd9-ac04-f68ac46e8cc7","expires_in":299,"refresh_token":null}}
+
+Friday 1st of September 2017 08:00:54 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:00:54 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:00:54 PM
+Client: oxd_socket_request243
+
+Friday 1st of September 2017 08:00:58 PM
+Client: oxd_socket_response1424{"status":"ok","data":{"access_token":"ae8f5c9c-6b3e-4fad-a5a4-c4afbe998b12","expires_in":299,"id_token":"eyJraWQiOiIxYmMxNjIzYy1hYWQ5LTQwYjUtYmMyNS01ODg2OGM4OTFjNDYiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2lhbTMxMC5jZW50cm94eS5jb20iLCJhdWQiOiJAIUU2NEUuQjdFNi4zQUM0LjZDQjkhMDAwMSFDMDVFLkY0MDIhMDAwOCEyMEQ5LjdEQUUuQzU3MC5BRTc3IiwiZXhwIjoxNTA0MjkyNDYwLCJpYXQiOjE1MDQyODg4NjAsIm5vbmNlIjoicjY0aWJvcTEwMXN1ZjVvOWxicG1lMmh1MzAiLCJhdXRoX3RpbWUiOjE1MDQyODg4NTMsImF0X2hhc2giOiJZajRhejlTcFg0SmZxWU9YNnMyUm93Iiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoiZ1YyTDlLNVhQaF9zWWpZOXlsakpmbWNrdGpXdU1iU1ZmNDY3SnR2U0t4ayJ9.cz802mLzHs6zCRbtyK0_L814s49K0KtiLRG4OSmiuz-oD4KXfYvRnyYerV4Hx8I-610BsV2494QoMwjVYbnELxLJALATX6gcoXBkWSuB69oXxweg_TN9Q20I8HWh64NSmAL4gzp4cnDPk94wZbyOCdykxaRa7uGEElJduXkTLXhJMn3C4SzAkcdYdkNgzrl66P6eej2qNKd8j9wqoMwnaVtFHLn6xLAfriGSOLM-BZKusOnPUudUkuI2TZxZdZJO7jezOKGZJUbDMSSGSDHWuieItEgA7INIHOu_NjMcLm6vaxazeSScn15cTDESWM_gH5aPl7JxidzRZ9GuGbOi5Q","refresh_token":"b5e85391-e81a-46e0-8212-a55e589faa44","id_token_claims":{"at_hash":["Yj4az9SpX4JfqYOX6s2Row"],"aud":["@!E64E.B7E6.3AC4.6CB9!0001!C05E.F402!0008!20D9.7DAE.C570.AE77"],"sub":["gV2L9K5XPh_sYjY9yljJfmcktjWuMbSVf467JtvSKxk"],"auth_time":["1504288853"],"iss":["https://iam310.centroxy.com"],"exp":["1504292460"],"iat":["1504288860"],"nonce":["r64iboq101suf5o9lbpme2hu30"],"oxOpenIDConnectVersion":["openidconnect-1.0"]}}}
+
+Friday 1st of September 2017 08:00:58 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:00:58 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:00:58 PM
+Client: oxd_socket_request908
+
+Friday 1st of September 2017 08:01:00 PM
+Client: oxd_socket_response0180{"status":"ok","data":{"scope":"openid profile uma_protection uma_authorization email","access_token":"56274663-1ed1-4d77-9928-4dee520a3016","expires_in":299,"refresh_token":null}}
+
+Friday 1st of September 2017 08:01:00 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:01:00 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:01:00 PM
+Client: oxd_socket_request243
+
+Friday 1st of September 2017 08:01:01 PM
+Client: oxd_socket_response0167{"status":"ok","data":{"scope":"openid","access_token":"6e2b3b40-8642-4f9e-90b6-a61facc67ecb","expires_in":299,"refresh_token":"1fd7a03c-c4f9-44f9-9afe-f5aac84ffab9"}}
+
+Friday 1st of September 2017 08:01:01 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:01:01 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:01:01 PM
+Client: oxd_socket_request908
+
+Friday 1st of September 2017 08:01:02 PM
+Client: oxd_socket_response0180{"status":"ok","data":{"scope":"openid profile uma_protection uma_authorization email","access_token":"557ec29a-98a6-4dd5-8aa1-0b64ed54ed97","expires_in":299,"refresh_token":null}}
+
+Friday 1st of September 2017 08:01:02 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:01:02 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:01:02 PM
+Client: oxd_socket_request209
+
+Friday 1st of September 2017 08:01:04 PM
+Client: oxd_socket_response0227{"status":"ok","data":{"claims":{"sub":["gV2L9K5XPh_sYjY9yljJfmcktjWuMbSVf467JtvSKxk"],"name":["test_user"],"given_name":["test"],"family_name":["user"],"email":["hello@centroxy.com"]},"refresh_token":null,"access_token":null}}
+
+Friday 1st of September 2017 08:01:04 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:01:24 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:01:24 PM
+Client: oxd_socket_request908
+
+Friday 1st of September 2017 08:01:25 PM
+Client: oxd_socket_response0180{"status":"ok","data":{"scope":"openid profile uma_protection uma_authorization email","access_token":"36b9ba01-496f-4b5c-b76d-5da06355fbcc","expires_in":299,"refresh_token":null}}
+
+Friday 1st of September 2017 08:01:25 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:01:25 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:01:25 PM
+Client: oxd_socket_request243
+
+Friday 1st of September 2017 08:01:27 PM
+Client: oxd_socket_response0985{"status":"ok","data":{"uri":"https://iam310.centroxy.com/oxauth/restv1/end_session?id_token_hint=eyJraWQiOiIxYmMxNjIzYy1hYWQ5LTQwYjUtYmMyNS01ODg2OGM4OTFjNDYiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2lhbTMxMC5jZW50cm94eS5jb20iLCJhdWQiOiJAIUU2NEUuQjdFNi4zQUM0LjZDQjkhMDAwMSFDMDVFLkY0MDIhMDAwOCEyMEQ5LjdEQUUuQzU3MC5BRTc3IiwiZXhwIjoxNTA0MjkyNDYwLCJpYXQiOjE1MDQyODg4NjAsIm5vbmNlIjoicjY0aWJvcTEwMXN1ZjVvOWxicG1lMmh1MzAiLCJhdXRoX3RpbWUiOjE1MDQyODg4NTMsImF0X2hhc2giOiJZajRhejlTcFg0SmZxWU9YNnMyUm93Iiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoiZ1YyTDlLNVhQaF9zWWpZOXlsakpmbWNrdGpXdU1iU1ZmNDY3SnR2U0t4ayJ9.cz802mLzHs6zCRbtyK0_L814s49K0KtiLRG4OSmiuz-oD4KXfYvRnyYerV4Hx8I-610BsV2494QoMwjVYbnELxLJALATX6gcoXBkWSuB69oXxweg_TN9Q20I8HWh64NSmAL4gzp4cnDPk94wZbyOCdykxaRa7uGEElJduXkTLXhJMn3C4SzAkcdYdkNgzrl66P6eej2qNKd8j9wqoMwnaVtFHLn6xLAfriGSOLM-BZKusOnPUudUkuI2TZxZdZJO7jezOKGZJUbDMSSGSDHWuieItEgA7INIHOu_NjMcLm6vaxazeSScn15cTDESWM_gH5aPl7JxidzRZ9GuGbOi5Q"}}
+
+Friday 1st of September 2017 08:01:27 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:03:25 PM
+Client: oxd_http_response{"status":"ok","data":{"oxd_id":"9e05242b-d0f3-42d0-957f-7a234e5ac323","op_host":"https://iam310.centroxy.com","client_id":"@!E64E.B7E6.3AC4.6CB9!0001!C05E.F402!0008!3A71.97E6.BAE2.EC73","client_secret":"145d9c59-ed51-4bd4-8578-9d00edcd4dd5","client_registration_access_token":"4e2a9ecb-bc25-4225-a215-3e75da8f2338","client_registration_client_uri":"https://iam310.centroxy.com/oxauth/restv1/register?client_id=@!E64E.B7E6.3AC4.6CB9!0001!C05E.F402!0008!3A71.97E6.BAE2.EC73","client_id_issued_at":1504289007,"client_secret_expires_at":1504375407}}
+
+Friday 1st of September 2017 08:03:25 PM
+Client: oxd_http_connectiondisconnected.
+
+Friday 1st of September 2017 08:03:32 PM
+Client: oxd_http_response{"status":"ok","data":{"scope":"openid profile uma_protection uma_authorization email","access_token":"d83c7b90-c5db-49be-91a4-5656d1d21ef3","expires_in":299,"refresh_token":null}}
+
+Friday 1st of September 2017 08:03:32 PM
+Client: oxd_http_connectiondisconnected.
+
+Friday 1st of September 2017 08:03:34 PM
+Client: oxd_http_response{"status":"ok","data":{"authorization_url":"https://iam310.centroxy.com/oxauth/restv1/authorize?response_type=code&client_id=@!E64E.B7E6.3AC4.6CB9!0001!C05E.F402!0008!9CDE.DB2E.5E4B.687D&redirect_uri=https://node.oxdexample.com/login_redirect.php&scope=openid+profile+email+uma_protection+uma_authorization&state=h7i7kmrk23s6q2fc267l1oihdp&nonce=tm1mc8jura0t3kr717fbm2jlq7"}}
+
+Friday 1st of September 2017 08:03:34 PM
+Client: oxd_http_connectiondisconnected.
+
+Friday 1st of September 2017 08:03:58 PM
+Client: oxd_http_response{"status":"ok","data":{"scope":"openid profile uma_protection uma_authorization email","access_token":"ed6c1cc3-c7e3-43f2-ba3d-2f49cc9dbbd1","expires_in":299,"refresh_token":null}}
+
+Friday 1st of September 2017 08:03:58 PM
+Client: oxd_http_connectiondisconnected.
+
+Friday 1st of September 2017 08:04:01 PM
+Client: oxd_http_response{"status":"ok","data":{"access_token":"a4480a6d-d7ad-43b4-9fad-e914a3e4152c","expires_in":299,"id_token":"eyJraWQiOiIxYmMxNjIzYy1hYWQ5LTQwYjUtYmMyNS01ODg2OGM4OTFjNDYiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2lhbTMxMC5jZW50cm94eS5jb20iLCJhdWQiOiJAIUU2NEUuQjdFNi4zQUM0LjZDQjkhMDAwMSFDMDVFLkY0MDIhMDAwOCE5Q0RFLkRCMkUuNUU0Qi42ODdEIiwiZXhwIjoxNTA0MjkyNjQ0LCJpYXQiOjE1MDQyODkwNDQsIm5vbmNlIjoidG0xbWM4anVyYTB0M2tyNzE3ZmJtMmpscTciLCJhdXRoX3RpbWUiOjE1MDQyODkwMzcsImF0X2hhc2giOiJDN29lZmlQRXVyenNKR01CTjNWRVNnIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoiZ1YyTDlLNVhQaF9zWWpZOXlsakpmbWNrdGpXdU1iU1ZmNDY3SnR2U0t4ayJ9.P0K58oLTPbl1-2C-eyxjjuHr7Bq6jf7QlW8C-M3jdYtKrMjAo2r-RwIpyjGeLR_w0na_0vzCklBqypkbG62O3j_IMsO36uHwiIgWIbLUG_wocInAkB7kJ8bMNsk6PWDn38D9HTgb5Rb4uH1De-hqBTY5B_4yq5xvvFMCqmafnWi7aLTZlyPNia-WOD4FTlmwpHkYMPEA8LXWvuVXSSiKfiW-mPtxEQ57S8wWVWidfFXkstnxIS_BR-Dh_OJHoPnfTAVYDAxJuBLzqMlLRHqGe3kqGeur1joZcvuYqT_7qcvl6QOE7tVpIxA-pKU7ix6BGl2Dnu_ryoId2qBeohVB5w","refresh_token":"e008f74f-a3fa-446e-8b73-281d55d0d6b3","id_token_claims":{"at_hash":["C7oefiPEurzsJGMBN3VESg"],"aud":["@!E64E.B7E6.3AC4.6CB9!0001!C05E.F402!0008!9CDE.DB2E.5E4B.687D"],"sub":["gV2L9K5XPh_sYjY9yljJfmcktjWuMbSVf467JtvSKxk"],"auth_time":["1504289037"],"iss":["https://iam310.centroxy.com"],"exp":["1504292644"],"iat":["1504289044"],"nonce":["tm1mc8jura0t3kr717fbm2jlq7"],"oxOpenIDConnectVersion":["openidconnect-1.0"]}}}
+
+Friday 1st of September 2017 08:04:01 PM
+Client: oxd_http_connectiondisconnected.
+
+Friday 1st of September 2017 08:04:02 PM
+Client: oxd_http_response{"status":"ok","data":{"scope":"openid profile uma_protection uma_authorization email","access_token":"9aac1afe-1ed9-47e8-8f55-028fb3660220","expires_in":299,"refresh_token":null}}
+
+Friday 1st of September 2017 08:04:02 PM
+Client: oxd_http_connectiondisconnected.
+
+Friday 1st of September 2017 08:04:03 PM
+Client: oxd_http_response{"status":"ok","data":{"scope":"openid","access_token":"a7d9baa9-5970-4a27-8e33-02bc49205b6e","expires_in":299,"refresh_token":"0ce7f1e3-b4a2-48ee-bdcf-ee793ae20a22"}}
+
+Friday 1st of September 2017 08:04:03 PM
+Client: oxd_http_connectiondisconnected.
+
+Friday 1st of September 2017 08:04:05 PM
+Client: oxd_http_response{"status":"ok","data":{"scope":"openid profile uma_protection uma_authorization email","access_token":"a857ebe2-41b3-4051-a6db-43bd9f50c236","expires_in":299,"refresh_token":null}}
+
+Friday 1st of September 2017 08:04:05 PM
+Client: oxd_http_connectiondisconnected.
+
+Friday 1st of September 2017 08:04:07 PM
+Client: oxd_http_response{"status":"ok","data":{"claims":{"sub":["gV2L9K5XPh_sYjY9yljJfmcktjWuMbSVf467JtvSKxk"],"name":["test_user"],"given_name":["test"],"family_name":["user"],"email":["hello@centroxy.com"]},"refresh_token":null,"access_token":null}}
+
+Friday 1st of September 2017 08:04:07 PM
+Client: oxd_http_connectiondisconnected.
+
+Friday 1st of September 2017 08:04:30 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:04:30 PM
+Client: oxd_socket_request908
+
+Friday 1st of September 2017 08:04:31 PM
+Client: oxd_socket_response0180{"status":"ok","data":{"scope":"openid profile uma_protection uma_authorization email","access_token":"7e279c8e-5c6a-44df-aaaf-c0fd9c05fc6b","expires_in":299,"refresh_token":null}}
+
+Friday 1st of September 2017 08:04:31 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:04:32 PM
+Client: oxd_http_response{"status":"ok","data":{"uri":"https://iam310.centroxy.com/oxauth/restv1/end_session?id_token_hint=eyJraWQiOiIxYmMxNjIzYy1hYWQ5LTQwYjUtYmMyNS01ODg2OGM4OTFjNDYiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2lhbTMxMC5jZW50cm94eS5jb20iLCJhdWQiOiJAIUU2NEUuQjdFNi4zQUM0LjZDQjkhMDAwMSFDMDVFLkY0MDIhMDAwOCE5Q0RFLkRCMkUuNUU0Qi42ODdEIiwiZXhwIjoxNTA0MjkyNjQ0LCJpYXQiOjE1MDQyODkwNDQsIm5vbmNlIjoidG0xbWM4anVyYTB0M2tyNzE3ZmJtMmpscTciLCJhdXRoX3RpbWUiOjE1MDQyODkwMzcsImF0X2hhc2giOiJDN29lZmlQRXVyenNKR01CTjNWRVNnIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIiwic3ViIjoiZ1YyTDlLNVhQaF9zWWpZOXlsakpmbWNrdGpXdU1iU1ZmNDY3SnR2U0t4ayJ9.P0K58oLTPbl1-2C-eyxjjuHr7Bq6jf7QlW8C-M3jdYtKrMjAo2r-RwIpyjGeLR_w0na_0vzCklBqypkbG62O3j_IMsO36uHwiIgWIbLUG_wocInAkB7kJ8bMNsk6PWDn38D9HTgb5Rb4uH1De-hqBTY5B_4yq5xvvFMCqmafnWi7aLTZlyPNia-WOD4FTlmwpHkYMPEA8LXWvuVXSSiKfiW-mPtxEQ57S8wWVWidfFXkstnxIS_BR-Dh_OJHoPnfTAVYDAxJuBLzqMlLRHqGe3kqGeur1joZcvuYqT_7qcvl6QOE7tVpIxA-pKU7ix6BGl2Dnu_ryoId2qBeohVB5w"}}
+
+Friday 1st of September 2017 08:04:32 PM
+Client: oxd_http_connectiondisconnected.
+
+Friday 1st of September 2017 08:07:55 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:07:55 PM
+Client: oxd_socket_request818
+
+Friday 1st of September 2017 08:07:55 PM
+Client: oxd_socket_response0373{"status":"ok","data":{"oxd_id":"53d86334-d0b3-45c5-a171-6796b16d6d25","op_host":"https://accounts.google.com","client_id":"425872034353-ksu139qd24527cbvkud44osl03u191ct.apps.googleusercontent.com","client_secret":"qIrje11dV-oOspkr9Bf608Cf","client_registration_access_token":null,"client_registration_client_uri":null,"client_id_issued_at":0,"client_secret_expires_at":0}}
+
+Friday 1st of September 2017 08:07:55 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:08:07 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:08:07 PM
+Client: oxd_socket_request208
+
+Friday 1st of September 2017 08:08:07 PM
+Client: oxd_socket_response0346{"status":"ok","data":{"authorization_url":"https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=425872034353-ksu139qd24527cbvkud44osl03u191ct.apps.googleusercontent.com&redirect_uri=https://node.oxdexample.com/login_redirect.php&scope=openid+profile+email&state=6opqtqrmei84lt35tg0lbmgs0e&nonce=issvdtrkgso898v3ecelng9r5c"}}
+
+Friday 1st of September 2017 08:08:07 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:11:31 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:11:31 PM
+Client: oxd_socket_request810
+
+Friday 1st of September 2017 08:11:31 PM
+Client: oxd_socket_response0373{"status":"ok","data":{"oxd_id":"58dcaed7-20b9-4a17-8e07-64fc84e8df7d","op_host":"https://accounts.google.com","client_id":"425872034353-ksu139qd24527cbvkud44osl03u191ct.apps.googleusercontent.com","client_secret":"qIrje11dV-oOspkr9Bf608Cf","client_registration_access_token":null,"client_registration_client_uri":null,"client_id_issued_at":0,"client_secret_expires_at":0}}
+
+Friday 1st of September 2017 08:11:31 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:11:37 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:11:37 PM
+Client: oxd_socket_request208
+
+Friday 1st of September 2017 08:11:37 PM
+Client: oxd_socket_response0342{"status":"ok","data":{"authorization_url":"https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=425872034353-ksu139qd24527cbvkud44osl03u191ct.apps.googleusercontent.com&redirect_uri=https://oxd.example.com/login_redirect.php&scope=openid+profile+email&state=ip7lth3p3se5t1nakrm3lr349f&nonce=q3evhj35gddrjveh64vppnsibn"}}
+
+Friday 1st of September 2017 08:11:37 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:11:41 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:11:41 PM
+Client: oxd_socket_request218
+
+Friday 1st of September 2017 08:11:42 PM
+Client: oxd_socket_response2184{"status":"ok","data":{"access_token":"ya29.Gl25BMqMsDDMy-OzGAUADgKzce_xaTZrT7_XFcQn3pRqq5GDDhx8gBvLdh6aon3_7u9Qv816YMSVEAdLqcYEMIfcy0UyoEK4wWh5ySyciKAia_iHS6D-LiMiY8mxGGY","expires_in":3599,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ2YzU0YjNjYmI4M2JlMTI5OWM4NmFjZTQzOTQ5NGM2NTRhYzIyMGMifQ.eyJhenAiOiI0MjU4NzIwMzQzNTMta3N1MTM5cWQyNDUyN2Nidmt1ZDQ0b3NsMDN1MTkxY3QuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI0MjU4NzIwMzQzNTMta3N1MTM5cWQyNDUyN2Nidmt1ZDQ0b3NsMDN1MTkxY3QuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDc4NjQ5NDU5MzYxODIyNzUyOTYiLCJoZCI6ImNlbnRyb3h5LmNvbSIsImVtYWlsIjoic2Rhc2hAY2VudHJveHkuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJmaWVzSjdXRVJPR0ZIa0t6OTZBU0hRIiwibm9uY2UiOiJxM2V2aGozNWdkZHJqdmVoNjR2cHBuc2libiIsImlzcyI6Imh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbSIsImlhdCI6MTUwNDI4OTUwNSwiZXhwIjoxNTA0MjkzMTA1LCJuYW1lIjoiU2FtcGFkYW5hbmRhIERhc2giLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDQuZ29vZ2xldXNlcmNvbnRlbnQuY29tLy0wVGVBVGlLVHVOWS9BQUFBQUFBQUFBSS9BQUFBQUFBQUFBQS9BUEp5cEEzeW5sTThmdDdMUmE0TmlQWkstWGotLXl6T3V3L3M5Ni1jL3Bob3RvLmpwZyIsImdpdmVuX25hbWUiOiJTYW1wYWRhbmFuZGEiLCJmYW1pbHlfbmFtZSI6IkRhc2giLCJsb2NhbGUiOiJlbiJ9.ildC0_6Tzy3RblTSBJkLbeRBQ_dD00mI21gbxe3ZU_CnCW51hXuZtSSie1QqShGuanXF9B4ylUtGELgOJ0fbW7pgWaQgN-_gSC_jO11fpETBcQxJiqafxLIub53SMyT3PTVRJkteTmnIwXP8MlmRfTMEN66s9P_lWORwrNKWu7fW-DmEKCGE2vBBOko3NpdLXYNpFcd3XBgV2bEjD0fuPOsImcI56DlrwS4YzWlebEbG-e-_DJZQWmM4N0HeVTj1E3WR-lMMb23p00wZTLgBnnDzroUSgJPVpCiSX0GmEPCA3uLeqOc_o9W8645XnLeRSP8PgfzQnJ6Hb3zenM6oAQ","refresh_token":null,"id_token_claims":{"at_hash":["fiesJ7WEROGFHkKz96ASHQ"],"sub":["107864945936182275296"],"email_verified":["true"],"iss":["https://accounts.google.com"],"given_name":["Sampadananda"],"locale":["en"],"nonce":["q3evhj35gddrjveh64vppnsibn"],"picture":["https://lh4.googleusercontent.com/-0TeATiKTuNY/AAAAAAAAAAI/AAAAAAAAAAA/APJypA3ynlM8ft7LRa4NiPZK-Xj--yzOuw/s96-c/photo.jpg"],"aud":["425872034353-ksu139qd24527cbvkud44osl03u191ct.apps.googleusercontent.com"],"azp":["425872034353-ksu139qd24527cbvkud44osl03u191ct.apps.googleusercontent.com"],"name":["Sampadananda Dash"],"hd":["centroxy.com"],"exp":["1504293105"],"iat":["1504289505"],"family_name":["Dash"],"email":["sdash@centroxy.com"]}}}
+
+Friday 1st of September 2017 08:11:42 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:11:42 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:11:42 PM
+Client: oxd_socket_request271
+
+Friday 1st of September 2017 08:11:42 PM
+Client: oxd_socket_response0392{"status":"ok","data":{"claims":{"sub":["107864945936182275296"],"email_verified":["true"],"name":["Sampadananda Dash"],"given_name":["Sampadananda"],"locale":["en"],"hd":["centroxy.com"],"family_name":["Dash"],"picture":["https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg"],"email":["sdash@centroxy.com"]},"refresh_token":null,"access_token":null}}
+
+Friday 1st of September 2017 08:11:42 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:11:46 PM
+Client: socket::socket_connectsocket connected
+
+Friday 1st of September 2017 08:11:46 PM
+Client: oxd_socket_request209
+
+Friday 1st of September 2017 08:11:46 PM
+Client: oxd_socket_response0163{"status":"ok","data":{"uri":"https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://oxd.example.com/login.php"}}
+
+Friday 1st of September 2017 08:11:46 PM
+Client: oxd_socket_connectiondisconnected.
+
+Friday 1st of September 2017 08:12:54 PM
+Client: oxd_http_response{"status":"error","data":{"error":"403","details":null,"error_description":"Forbidden Access"}}
+
+Friday 1st of September 2017 08:12:54 PM
+Client: oxd_http_connectiondisconnected.

@@ -109,4 +109,10 @@
      * @var array $acr_values        Gluu login acr type, can be basic, duo, u2f, gplus and etc.
      */
     public static $acr_values;
+    
+    /**
+     * @static
+     * @var string $conn_type        Can be socket/web
+     */
+    public static $conn_type;
 }

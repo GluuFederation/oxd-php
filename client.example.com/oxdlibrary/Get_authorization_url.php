@@ -90,6 +90,18 @@
 	     * @var string $response_authorization_url
 	     */
 	    private $response_authorization_url;
+            /**
+	     * @var string $request_access_token     access token for each request
+	     */
+            private $request_protection_access_token;
+            
+            function getRequest_protection_access_token() {
+                return $this->request_protection_access_token;
+            }
+
+            function setRequest_protection_access_token($request_protection_access_token) {
+                $this->request_protection_access_token = $request_protection_access_token;
+            }
 	
 	    /**
 	     * Constructor
@@ -213,7 +225,8 @@
 	            "scope" => $this->getRequestScope(),
 	            "acr_values" => $this->getRequestAcrValues(),
 	            "prompt" => $this->getRequestPrompt(),
-	            "hd" => $this->getRequestHd()
+	            "hd" => $this->getRequestHd(),
+	            "protection_access_token"=> $this->getRequest_protection_access_token()
 	        );
 	    }
 	

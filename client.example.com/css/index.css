@@ -1,0 +1,68 @@
+.container-fluid{
+    background-color: white;
+    border-color: #e5eef1;
+}
+
+.hr_modified{
+    display: block;
+    height: 1px;
+    width: 80%;
+    margin-left: 0px;
+}
+
+#bod_div{
+    outline-color: #2eea21;
+    outline-width: 1px;
+    outline-style: solid;
+    background-color: #effdff;
+    padding: 10px;
+    margin-left: -10px;
+    margin-right: -13px;
+    margin-top: 50px;
+}
+
+.row label {
+    width: 35%;
+}
+
+.ip_box{
+    padding-left: 20px;
+    margin-right: 0px;
+    border-radius: 5px;
+}
+
+.ip{
+    margin-left: 30px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+select{
+    margin-left: 94px;
+    width: 384px;
+}
+
+.req:before {
+  content:"*";
+  color:red;
+}
+
+.form-group .control-label {
+    text-align: left;
+}
+
+#loadingDiv{
+  position:fixed;
+  top:0px;
+  right:0px;
+  width:100%;
+  height:100%;
+  background-color:#666;
+  background-image:url('ajax-loader.gif');
+  background-repeat:no-repeat;
+  background-position:center;
+  z-index:10000000;
+  opacity: 0.6;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+  display:none;
+}

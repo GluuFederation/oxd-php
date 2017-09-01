@@ -529,14 +529,28 @@
 	            "client_jwks_uri" => $this->getRequestClientJwksUri(),
 	            "client_token_endpoint_auth_method" => $this->getRequestClientTokenEndpointAuthMethod(),
 	            "client_request_uris" => $this->getRequestClientRequestUris(),
-	            "client_logout_uris"=> $this->getRequestClientLogoutUris(),
 	            "client_sector_identifier_uri"=> $this->getRequestClientSectorIdentifierUri(),
 	            "contacts" => $this->getRequestContacts(),
 	            "ui_locales" => $this->getRequestUiLocales(),
 	            "claims_locales" => $this->getRequestClaimsLocales(),
 	            "client_id"=> $this->getRequestClientId(),
-	            "client_secret"=> $this->getRequestClientSecret()
+	            "client_secret"=> $this->getRequestClientSecret(),
+	            "client_frontchannel_logout_uris"=> $this->getRequestClientLogoutUris(),
+                    "claims_redirect_uri"=> $this->getRequestClaimsRedirectUri(),
+                    "oxd_rp_programming_language" => 'php'
 	        );
 	    }
+            private $request_claims_redirect_uris;
+            
+            /**
+             * @return request_claims_redirect_uris
+             */
+            public function getRequestClaimsRedirectUri(){
+                return $this->request_claims_redirect_uris;
+            }
+            
+            public function setRequestClaimsRedirectUri($request_claims_redirect_uris){
+                $this->request_claims_redirect_uris = $request_claims_redirect_uris;
+            }
 	
 	}
