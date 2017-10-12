@@ -187,7 +187,7 @@ and open the template in the editor.
                     }
                     $("#loadingDiv").show();
                     jQuery.post(
-                        "/SetupClient.php",
+                        "SetupClient.php",
                         request_data,
                         function (data) {
                             if(isJson(data)){
@@ -215,7 +215,7 @@ and open the template in the editor.
                 $("#update").click(function(){
                     $("#loadingDiv").show();
                     jQuery.post(
-                        "/Update.php",
+                        "Update.php",
                         { 
                             redirect_uri: $('input:text[name="redirect_uri"]').val(),
                             op_host: $('input:text[name="ophost"]').val(),
@@ -241,7 +241,7 @@ and open the template in the editor.
                 
                 $("#del").click(function(){
                     jQuery.post(
-                        "/Delete.php",
+                        "Delete.php",
                         {},
                         function (data) {
                             location.reload();
@@ -250,7 +250,7 @@ and open the template in the editor.
                 });
                 
                 $("#login").click(function(){
-                    window.location = "/login.php";
+                    window.location = "login.php";
                 });
             });
         </script>

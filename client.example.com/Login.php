@@ -34,7 +34,7 @@
     </div>
     <div class="col-md-4">
         <div class="form-group text-left">
-            <a href="/Authorize.php">
+            <a href="Authorize.php">
                 <button class="btn btn-success text-center" style="margin-top:25px; width: 50%;">Login</button>
             </a>
         </div>

@@ -143,7 +143,7 @@ try {
             $(document).ready(function () {
                 jQuery('#btnLogout').click(function (event) {
                     $("#loadingDiv").show();
-                    jQuery.post("/GetLogoutUri.php",
+                    jQuery.post("GetLogoutUri.php",
                             {},
                             function (data) {
                                 var dataJson = JSON.parse(data);
