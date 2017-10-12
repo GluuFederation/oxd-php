@@ -19,6 +19,8 @@
             $get_authorization_url->setRequestOxdId($oxdId);
             $get_authorization_url->setRequestScope(Oxd_RP_config::$scope);
             $get_authorization_url->setRequestAcrValues(Oxd_RP_config::$acr_values);
+            $get_authorization_url->addCustom_parameters("param1", "value1");
+            $get_authorization_url->addCustom_parameters("param2", "value2");
             if($oxdObject->has_registration_endpoint){
                 if($oxdRpConfig->conn_type == "local"){
                     $get_authorization_url->setRequest_protection_access_token(getClientProtectionAccessToken());

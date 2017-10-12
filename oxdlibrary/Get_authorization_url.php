@@ -95,6 +95,18 @@
 	     */
             private $request_protection_access_token;
             
+            /**
+	     * @var string $custom_parameters
+	     */
+            private $custom_parameters = [];
+            function getCustom_parameters() {
+                return $this->custom_parameters;
+            }
+
+            function addCustom_parameters($key,$value) {
+                $this->custom_parameters[$key] = $value;
+            }
+
             function getRequest_protection_access_token() {
                 return $this->request_protection_access_token;
             }
@@ -226,6 +238,7 @@
 	            "acr_values" => $this->getRequestAcrValues(),
 	            "prompt" => $this->getRequestPrompt(),
 	            "hd" => $this->getRequestHd(),
+                    "custom_parameters" => $this->getCustom_parameters(),
 	            "protection_access_token"=> $this->getRequest_protection_access_token()
 	        );
 	    }
