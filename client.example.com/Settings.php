@@ -250,7 +250,7 @@ and open the template in the editor.
                 });
                 
                 $("#login").click(function(){
-                    window.location = "login.php";
+                    window.location = "Login.php";
                 });
             });
         </script>
