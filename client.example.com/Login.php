@@ -32,10 +32,17 @@
     <div class="col-md-4">
         <h2>Login by OpenID Provider</h2>
     </div>
-    <div class="col-md-4">
-        <div class="form-group text-left">
+    <div class="col-md-2">
+        <div class="form-group text-right">
             <a href="Authorize.php">
                 <button class="btn btn-success text-center" style="margin-top:25px; width: 50%;">Login</button>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="form-group text-left">
+            <a href="Settings.php">
+                <button class="btn btn-success text-center" style="margin-top:25px; width: 50%;">Settings</button>
             </a>
         </div>
     </div>
