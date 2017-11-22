@@ -98,13 +98,7 @@
                 $getClientAccessToken = new Get_client_access_token($config);
             }
             $getClientAccessToken->setRequestOpHost(Oxd_RP_config::$op_host);
-            $getClientAccessToken->setRequestAcrValues(Oxd_RP_config::$acr_values);
-            $getClientAccessToken->setRequestAuthorizationRedirectUri(Oxd_RP_config::$authorization_redirect_uri);
-            $getClientAccessToken->setRequestPostLogoutRedirectUri(Oxd_RP_config::$post_logout_redirect_uri);
-            $getClientAccessToken->setRequestGrantTypes(Oxd_RP_config::$grant_types);
-            $getClientAccessToken->setRequestResponseTypes(Oxd_RP_config::$response_types);
-            $getClientAccessToken->setRequestScope(Oxd_RP_config::$scope);
-            $getClientAccessToken->setRequest_oxd_id(getOxdId());
+            $getClientAccessToken->setRequest_scope(Oxd_RP_config::$scope);
             $getClientAccessToken->setRequest_client_id(getOxdClientId());
             $getClientAccessToken->setRequest_client_secret(getOxdClientSecret());
             $getClientAccessToken->request();
@@ -130,7 +124,7 @@
             return $getAccessTokenFromRefreshToken->getResponseAccessToken();
         } catch(Exception $e){
             return false;
-        }
+        };
     }
     
     function check_registration_endpoints($op_host){
