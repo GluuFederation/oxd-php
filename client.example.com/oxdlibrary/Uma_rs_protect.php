@@ -72,18 +72,29 @@
 	     * @var array $request_resources                       This parameter your resources parameter
 	     */
 	    private $request_resources = array();
+            /**
+	     * @var array $request_resource                       This parameter your resources parameter
+	     */
 	    public $request_resource = array();
+            /**
+	     * @var array $request_condition                       This parameter your resources parameter
+	     */
 	    public $request_condition = array();
             
             /**
              * var string $request_protection_access_token
              */
             private $request_protection_access_token;
-            
+            /**
+	     * @return string
+	     */
             function getRequest_protection_access_token() {
                 return $this->request_protection_access_token;
             }
-            
+            /**
+             * @param string $request_protection_access_token
+	     * @return void
+	     */
             function setRequest_protection_access_token($request_protection_access_token) {
                 $this->request_protection_access_token = $request_protection_access_token;
             }
@@ -124,10 +135,12 @@
 	     */
 	    public function getRequestResources()
 	    {
-	
 	        return $this->request_resources;
 	    }
-	
+            /**
+             * @param string $path
+	     * @return void
+	     */
 	    public function addResource($path){
 	        $request_resources =  array(
 	            'path'=>$path,
@@ -136,7 +149,12 @@
 	        array_push($this->request_resources, $request_resources);
 	        //$this->request_condition = null;
 	    }
-	
+            /**
+             * @param array $httpMethods
+             * @param array $scopes
+             * @param array $ticketScopes
+	     * @return array $request_condition
+	     */
 	    public function addConditionForPath(array $httpMethods, array $scopes, array $ticketScopes){
 	        $request_condition =   array(
 	                                        "httpMethods" => $httpMethods,
@@ -147,6 +165,9 @@
 	        array_push($this->request_condition, $request_condition);
 	        return $this->request_condition;
 	    }
+            /**
+	     * @return array $request_condition
+	     */
 	    public function getCondition(){
 	        return  $this->request_condition;
 	    }

@@ -139,6 +139,10 @@
 	     * @var array $request_claims_locales
 	     */
 	    private $request_claims_locales = null;
+            /**
+	     * @var string $request_access_token     access token for each request
+	     */
+            private $request_protection_access_token;
 	    /**
 	     * Response parameter from oxd-server
 	     * It is basic parameter for other protocols
@@ -452,7 +456,22 @@
 	    {
 	        $this->request_contacts = $request_contacts;
 	    }
-	
+            
+            /**
+	     * @return string
+	     */
+            function getRequest_protection_access_token() {
+                return $this->request_protection_access_token;
+            }
+            
+            /**
+             * @param string $request_protection_access_token
+	     * @return string
+	     */
+            function setRequest_protection_access_token($request_protection_access_token) {
+                $this->request_protection_access_token = $request_protection_access_token;
+            }
+            
 	    /**
 	     * @return string
 	     */
@@ -537,18 +556,22 @@
 	            "client_secret"=> $this->getRequestClientSecret(),
 	            "client_frontchannel_logout_uris"=> $this->getRequestClientLogoutUris(),
                     "claims_redirect_uri"=> $this->getRequestClaimsRedirectUri(),
-                    "oxd_rp_programming_language" => 'php'
+                    "oxd_rp_programming_language" => 'php',
+	            "protection_access_token"=> $this->getRequest_protection_access_token()
 	        );
 	    }
             private $request_claims_redirect_uris;
             
             /**
-             * @return request_claims_redirect_uris
+             * @return string
              */
             public function getRequestClaimsRedirectUri(){
                 return $this->request_claims_redirect_uris;
             }
-            
+            /**
+             * @param $request_claims_redirect_uris
+             * @return void
+             */
             public function setRequestClaimsRedirectUri($request_claims_redirect_uris){
                 $this->request_claims_redirect_uris = $request_claims_redirect_uris;
             }

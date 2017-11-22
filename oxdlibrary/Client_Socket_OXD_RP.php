@@ -71,7 +71,7 @@
 	     */
 	    protected  $base_url = __DIR__;
             /**
-	     * @var string $url      Url for oxd-to-http.
+	     * @var string $url      Url for oxd https extension.
 	     */
 	    private  $url = null;
 	
@@ -213,11 +213,21 @@
 	
 	    }
             
-            
+            /**
+	     * Set url for oxd https extension
+	     *
+	     * @return $url
+	     **/
             function getUrl() {
                 return $this->url;
             }
-
+            
+            /**
+	     * Set url for oxd https extension
+	     *
+	     * @param  string  $url
+	     * @return void
+	     **/
             function setUrl($url = null) {
                 $this->url = $url;
             }
