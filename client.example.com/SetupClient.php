@@ -47,7 +47,10 @@ if(check_registration_endpoints($oxdRpConfig->op_host))
             $register_site->setRequestResponseTypes(Oxd_RP_config::$response_types);
             $register_site->setRequestScope(Oxd_RP_config::$scope);
             $register_site->setRequestClientName($_POST['client_name']);
-            $register_site->setRequestClaimsRedirectUri(["https://client.example.com/Claims_gathering_redirect.php"]);
+	    $segment = explode('/',$_SERVER['REQUEST_URI']);
+            array_pop($segment);
+            $segment = implode("/",$segment);
+            $register_site->setRequestClaimsRedirectUri(["https://".$_SERVER['SERVER_NAME'].$segment."/Claims_gathering_redirect.php"]);
             $register_site->request();
             $oxdObject->oxd_id = $register_site->getResponseOxdId();
             $oxdObject->oxd_client_name = $_POST['client_name'];
