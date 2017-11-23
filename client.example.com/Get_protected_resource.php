@@ -16,8 +16,10 @@
             $uma_rp_get_rpt = new Uma_rp_get_rpt($config);
         }
         $uma_rp_get_rpt->setRequest_oxd_id($oxdObject->oxd_id);
+        
+        $oxdObject->protected_resource_url = $_REQUEST["protected_resource"];
+        setOxdParamsFromObject($oxdObject);
         $ticket = getProtectedResource($_REQUEST["protected_resource"]);
-
         $uma_rp_get_rpt->setRequest_ticket($ticket);
         
         if($oxdRpConfig->conn_type == "local"){

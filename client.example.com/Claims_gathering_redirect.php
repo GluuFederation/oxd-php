@@ -16,7 +16,7 @@ $uma_rp_get_rpt->setRequest_protection_access_token(getClientProtectionAccessTok
 $uma_rp_get_rpt->setRequest_ticket($_REQUEST['ticket']);
 $uma_rp_get_rpt->setRequest_state($_REQUEST['state']);
 $uma_rp_get_rpt->request();
-$response = getProtectedResource("https://rsapi.com/api.php",$uma_rp_get_rpt->getResponse_access_token());
+$response = getProtectedResource($oxdObject->protected_resource_url,$uma_rp_get_rpt->getResponse_access_token());
 print_r($response);
 
 ?>
