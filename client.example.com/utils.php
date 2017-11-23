@@ -2,6 +2,7 @@
 
     require_once './oxdlibrary/Get_client_access_token.php';
     require_once './oxdlibrary/Get_access_token_by_refresh_token.php';
+    require_once './oxdlibrary/Uma_rp_get_claims_gathering_url.php';
     $config = include('./oxdlibrary/oxdHttpConfig.php');
     $baseUrl = __DIR__;
     $oxdRpConfig = json_decode(file_get_contents($baseUrl . '/oxdlibrary/oxd-rp-settings.json'));
@@ -148,5 +149,54 @@
         return true;
     }
     
+    
+    function getProtectedResource($resource,$access_token = null){
+        
+        error_reporting(E_ALL); 
+        ini_set('display_errors', 1);
+
+        $ch = curl_init(); 
+        curl_setopt($ch, CURLOPT_URL, $resource); 
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); 
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+        $postArray = [];
+        if($access_token != null){
+            
+            $postArray["RPT"]=$access_token;
+        }
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS,$postArray);
+        $ticket = curl_exec($ch); 
+        $err     = curl_errno( $ch );
+        $errmsg  = curl_error( $ch );
+        $header  = curl_getinfo( $ch );
+        curl_close($ch);
+        if($ticket == ""){
+            echo $errmsg;
+        }
+        $ticket = str_replace("\n", '', $ticket);
+        $ticket = str_replace("\r", '', $ticket);
+        return $ticket;
+    }
+    
+    function getClaimsGatheringUrl($ticket,$config = null){
+        $baseUrl = __DIR__;
+        $oxdJSON = file_get_contents($baseUrl.'/oxdId.json');
+        $oxdOBJECT = json_decode($oxdJSON);
+        $claimsGatheringUrl = new Uma_rp_get_claims_gathering_url($config);
+        $claimsGatheringUrl->setRequest_oxd_id($oxdOBJECT->oxd_id);
+        $segment = explode('/',$_SERVER['REQUEST_URI']);
+        array_pop($segment);
+        $segment = implode("/",$segment);
+        $claimsGatheringUrl->setRequest_claims_redirect_uri("https://".$_SERVER['SERVER_NAME'].$segment."/Claims_gathering_redirect.php");
+        $claimsGatheringUrl->setRequest_ticket($ticket);
+        $claimsGatheringUrl->setRequest_protection_access_token(getClientProtectionAccessToken());
+        $claimsGatheringUrl->request();
+        return $claimsGatheringUrl->getResponse_url();
+        
+    }
 ?>
 

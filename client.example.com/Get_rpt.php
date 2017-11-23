@@ -16,7 +16,9 @@
             $uma_rp_get_rpt = new Uma_rp_get_rpt($config);
         }
         $uma_rp_get_rpt->setRequest_oxd_id($oxdObject->oxd_id);
-        $uma_rp_get_rpt->setRequest_ticket("8d736e57-e407-4ec2-ab8b-92df70d90edb");
+        $ticket = getProtectedResource("https://rsapi.com/api.php");
+
+        $uma_rp_get_rpt->setRequest_ticket($ticket);
         
         if($oxdRpConfig->conn_type == "local"){
             $uma_rp_get_rpt->setRequest_protection_access_token(getClientProtectionAccessToken());
@@ -24,7 +26,14 @@
             $uma_rp_get_rpt->setRequest_protection_access_token(getClientProtectionAccessToken($config));
         }
         $uma_rp_get_rpt->request();
-        echo $uma_rp_get_rpt->getResponseJSON();
+
+        if($oxdRpConfig->conn_type == "local"){
+            $url = getClaimsGatheringUrl($uma_rp_get_rpt->getNeedinfo_ticket());
+        } else if($oxdRpConfig->conn_type == "web"){
+            $url = getClaimsGatheringUrl($uma_rp_get_rpt->getNeedinfo_ticket(),$config);
+        }
+
+        header("Location: $url");
     }
     catch(Exception $e){
         echo "{\"error\":\"".$e->getMessage()."\"}";
