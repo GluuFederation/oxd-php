@@ -103,6 +103,7 @@ and open the template in the editor.
                                 <input type="button" value="Edit" class="btn btn-primary" id="edit">
                                 <input type="button" value="Delete" class="btn btn-primary" id="del">
                                 <input type="button" value="Login" class="btn btn-primary" id="login">
+                                <button class="btn btn-primary"><a href="Uma.php" style="color:white;">UMA</a></button>
                             <?php }else{ ?>
                                 <input type="button" value="Register" class="btn btn-primary" id="register">
                             <?php } ?>
