@@ -106,12 +106,12 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="../reports/errors.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">436</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">1</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../reports/markers.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">16</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">14</span>
                                 </a>
                             </li>
                             <li>
@@ -136,10 +136,10 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-258128340"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-903137069"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-258128340" class="accordion-body collapse in">
+            <div id="namespace-903137069" class="accordion-body collapse in">
                 <div class="accordion-inner">
 
                     
@@ -180,8 +180,8 @@
                     <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
 
                     <h1><small>\</small>Get_authorization_url</h1>
-                    <p><em></em></p>
-                    
+                    <p><em>Client authorization class</em></p>
+                    <p>Class is connecting to oxd-server via socket, and getting authorization url from gluu-server.</p>
                     
                                         
                     <section id="summary">
@@ -290,7 +290,7 @@
                         <dt>File</dt>
                             <dd><a href="../files/Get_authorization_url.html"><div class="path-wrapper">Get_authorization_url.php</div></a></dd>
                                                 <dt>Package</dt>
-                            <dd><div class="namespace-wrapper">Oxd Library by Gluu</div></dd>
+                            <dd><div class="namespace-wrapper">Gluu-oxd-library\Libraries</div></dd>
                                                 <dt>Class hierarchy</dt>
                             <dd class="hierarchy">
                                                                                                                                                                                                                                                                                                                                                                                                                                                             
@@ -303,11 +303,22 @@
                         
                         
                         
-                        
+                                                                            <dt>See also</dt>
+                                                                                        <dd><a href="../classes/Client_Socket_OXD_RP.html"><span class="namespace-wrapper">\Client_Socket_OXD_RP</span></a></dd>
+                                                            <dd><a href="../classes/Client_OXD_RP.html"><span class="namespace-wrapper">\Client_OXD_RP</span></a></dd>
+                                                            <dd><a href="../classes/Oxd_RP_config.html"><span class="namespace-wrapper">\Oxd_RP_config</span></a></dd>
+                                                    
                                                                         </dl>
                     <h2>Tags</h2>
                     <table class="table table-condensed">
-                                            <tr><td colspan="2"><em>None found</em></td></tr>
+                                            <tr>
+                            <th>
+                                category
+                            </th>
+                            <td>
+                                                                    <p>Relying Party (RP) and User Managed Access (UMA)</p>
+                                                            </td>
+                        </tr>
                                         </table>
                 </aside>
             </div>
@@ -788,7 +799,7 @@
             <article class="property">
                 <h3 class="private ">$custom_parameters</h3>
                 <pre class="signature">$custom_parameters : string</pre>
-                <p><em></em></p>
+                <p><em>custom_parameters</em></p>
                 
 
                                 <h4>Type</h4>
@@ -819,14 +830,14 @@
             <article class="method">
                 <h3 class="public ">__construct()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">__construct(  <span class="argument">$config = null</span>) : void</pre>
-                <p><em>Constructor</em></p>
+                <pre class="signature" style="margin-right: 54px;">__construct(null  <span class="argument">$config = null</span>) : void</pre>
+                <p><em>Get_authorization_url constructor.</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>null</td>
                                 <td>$config </td>
                                 <td></td>
                             </tr>
@@ -853,7 +864,7 @@
             <article class="method">
                 <h3 class="public ">request()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">request(  <span class="argument">$url = &quot;&quot;</span>) : void</pre>
+                <pre class="signature" style="margin-right: 54px;">request(string  <span class="argument">$url = &quot;&quot;</span>) : void</pre>
                 <p><em>send function sends the command to the oxd server.</em></p>
                 <p>Args:
 command (dict) - Dict representation of the JSON command string</p>
@@ -861,7 +872,7 @@ command (dict) - Dict representation of the JSON command string</p>
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$url </td>
                                 <td></td>
                             </tr>
@@ -1418,13 +1429,15 @@ command (dict) - Dict representation of the JSON command string</p>
             <article class="method">
                 <h3 class="public ">getUrl()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">getUrl() </pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">getUrl() : string</pre>
+                <p><em>getUrl</em></p>
                 
 
                 
                 
-                				
+                                    <h4>Returns</h4>
+                    string
+                                    				
                             </article>
         </div>
         <aside class="span4 detailsbar">
@@ -1446,14 +1459,14 @@ command (dict) - Dict representation of the JSON command string</p>
             <article class="method">
                 <h3 class="public ">setUrl()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">setUrl(  <span class="argument">$url = null</span>) </pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">setUrl(null  <span class="argument">$url = null</span>) </pre>
+                <p><em>setUrl</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>null</td>
                                 <td>$url </td>
                                 <td></td>
                             </tr>
@@ -1482,8 +1495,8 @@ command (dict) - Dict representation of the JSON command string</p>
             <article class="method">
                 <h3 class="public ">getCustom_parameters()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">getCustom_parameters() </pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">getCustom_parameters() : void</pre>
+                <p><em>Get Custom parameters</em></p>
                 
 
                 
@@ -1509,7 +1522,7 @@ command (dict) - Dict representation of the JSON command string</p>
                 <h3 class="public ">addCustom_parameters()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">addCustom_parameters(  <span class="argument">$key</span>,   <span class="argument">$value</span>) </pre>
-                <p><em></em></p>
+                <p><em>Add Custom Parameters</em></p>
                 
 
                                     <h4>Parameters</h4>
@@ -1547,13 +1560,15 @@ command (dict) - Dict representation of the JSON command string</p>
             <article class="method">
                 <h3 class="public ">getRequest_protection_access_token()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">getRequest_protection_access_token() </pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">getRequest_protection_access_token() : string</pre>
+                <p><em>Get Request_protection_access_token</em></p>
                 
 
                 
                 
-                				
+                                    <h4>Returns</h4>
+                    string
+                                    				
                             </article>
         </div>
         <aside class="span4 detailsbar">
@@ -1573,14 +1588,14 @@ command (dict) - Dict representation of the JSON command string</p>
             <article class="method">
                 <h3 class="public ">setRequest_protection_access_token()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">setRequest_protection_access_token(  <span class="argument">$request_protection_access_token</span>) </pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">setRequest_protection_access_token(string  <span class="argument">$request_protection_access_token</span>) </pre>
+                <p><em>setRequest_protection_access_token</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$request_protection_access_token </td>
                                 <td></td>
                             </tr>
@@ -1608,7 +1623,7 @@ command (dict) - Dict representation of the JSON command string</p>
                 <h3 class="public ">getRequestOxdId()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">getRequestOxdId() : string</pre>
-                <p><em></em></p>
+                <p><em>getRequestOxdId</em></p>
                 
 
                 
@@ -1635,14 +1650,14 @@ command (dict) - Dict representation of the JSON command string</p>
             <article class="method">
                 <h3 class="public ">setRequestOxdId()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">setRequestOxdId(string  <span class="argument">$request_oxd_id</span>) : void</pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">setRequestOxdId(  <span class="argument">$request_oxd_id</span>) </pre>
+                <p><em>setRequestOxdId</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td>string</td>
+                                <td></td>
                                 <td>$request_oxd_id </td>
                                 <td></td>
                             </tr>
@@ -1670,7 +1685,7 @@ command (dict) - Dict representation of the JSON command string</p>
                 <h3 class="public ">getRequestAcrValues()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">getRequestAcrValues() : array</pre>
-                <p><em></em></p>
+                <p><em>getRequestAcrValues</em></p>
                 
 
                 
@@ -1698,7 +1713,7 @@ command (dict) - Dict representation of the JSON command string</p>
                 <h3 class="public ">setRequestAcrValues()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">setRequestAcrValues(array  <span class="argument">$request_acr_values</span>) : void</pre>
-                <p><em></em></p>
+                <p><em>setRequestAcrValues</em></p>
                 
 
                                     <h4>Parameters</h4>
@@ -1732,7 +1747,7 @@ command (dict) - Dict representation of the JSON command string</p>
                 <h3 class="public ">getRequestScope()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">getRequestScope() : array</pre>
-                <p><em></em></p>
+                <p><em>getRequestScope</em></p>
                 
 
                 
@@ -1760,7 +1775,7 @@ command (dict) - Dict representation of the JSON command string</p>
                 <h3 class="public ">setRequestScope()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">setRequestScope(array  <span class="argument">$request_scope</span>) </pre>
-                <p><em></em></p>
+                <p><em>setRequestScope</em></p>
                 
 
                                     <h4>Parameters</h4>
@@ -1794,7 +1809,7 @@ command (dict) - Dict representation of the JSON command string</p>
                 <h3 class="public ">getRequestPrompt()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">getRequestPrompt() : string</pre>
-                <p><em></em></p>
+                <p><em>getRequestPrompt</em></p>
                 
 
                 
@@ -1822,7 +1837,7 @@ command (dict) - Dict representation of the JSON command string</p>
                 <h3 class="public ">setRequestPrompt()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">setRequestPrompt(string  <span class="argument">$request_prompt</span>) </pre>
-                <p><em></em></p>
+                <p><em>setRequestPrompt</em></p>
                 
 
                                     <h4>Parameters</h4>
@@ -1856,7 +1871,7 @@ command (dict) - Dict representation of the JSON command string</p>
                 <h3 class="public ">getRequestHd()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">getRequestHd() : string</pre>
-                <p><em></em></p>
+                <p><em>getRequestHd</em></p>
                 
 
                 
@@ -1884,7 +1899,7 @@ command (dict) - Dict representation of the JSON command string</p>
                 <h3 class="public ">setRequestHd()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">setRequestHd(string  <span class="argument">$request_hd</span>) </pre>
-                <p><em></em></p>
+                <p><em>setRequestHd</em></p>
                 
 
                                     <h4>Parameters</h4>
@@ -1918,7 +1933,7 @@ command (dict) - Dict representation of the JSON command string</p>
                 <h3 class="public ">getResponseAuthorizationUrl()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">getResponseAuthorizationUrl() : string</pre>
-                <p><em></em></p>
+                <p><em>getResponseAuthorizationUrl</em></p>
                 
 
                 
@@ -1988,7 +2003,7 @@ command (dict) - Dict representation of the JSON command string</p>
                 <section class="span10 offset1">
                     <hr />
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on December 19th, 2017 at 09:00.
+                    on December 19th, 2017 at 10:03.
                 </section>
             </section>
         </section>

@@ -70,62 +70,62 @@
 	    private $request_oxd_id = null;
             
             /**
-             * var string $request_ticket
+             * @var string $request_ticket
              */
             private $request_ticket;
             
             /**
-             * var string $request_claim_token
+             * @var string $request_claim_token
              */
             private $request_claim_token;
             
             /**
-             * var string $request_claim_token_format
+             * @var string $request_claim_token_format
              */
             private $request_claim_token_format;
             
             /**
-             * var string $request_pct
+             * @var string $request_pct
              */
             private $request_pct;
             
             /**
-             * var string $request_rpt
+             * @var string $request_rpt
              */
             private $request_rpt;
             
             /**
-             * var string $request_scope
+             * @var string $request_scope
              */
             private $request_scope;
             
             /**
-             * var string $request_state
+             * @var string $request_state
              */
             private $request_state;
             
             /**
-             * var string $request_protection_access_token
+             * @var string $request_protection_access_token
              */
             private $request_protection_access_token;
             
             /**
-             * var string $response_access_token
+             * @var string $response_access_token
              */
             private $response_access_token;
             
             /**
-             * var string $response_token_type
+             * @var string $response_token_type
              */
             private $response_token_type;
             
             /**
-             * var string $response_pct
+             * @var string $response_pct
              */
             private $response_pct;
             
             /**
-             * var string $response_upgraded
+             * @var string $response_upgraded
              */
             private $response_upgraded;
 	

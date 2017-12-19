@@ -1,12 +1,23 @@
 {
-  "op_host":"<gluu server URL>",
-   "oxd_host":"<oxd host/oxd host ip>",
-   "oxd_host_port":8099,
-   "authorization_redirect_uri":"<Authorization redirect url>",
-   "post_logout_redirect_uri":"<Logout redirect URL>",
-   "scope":["openid","profile","uma_protection","uma_authorization"],
-   "application_type":"web",
-   "response_types":["code"],
-   "grant_types":["authorization_code"],
-   "acr_values":[""]
+  "op_host": "<gluu server URL>",
+  "oxd_host": "<oxd host/oxd host ip>",
+  "oxd_host_port": 8099,
+  "authorization_redirect_uri": "<Authorization redirect url>",
+  "post_logout_redirect_uri": "<Logout redirect URL>",
+  "scope": [
+    "openid",
+    "profile",
+    "uma_protection",
+    "uma_authorization"
+  ],
+  "application_type": "web",
+  "response_types": [
+    "code"
+  ],
+  "grant_types": [
+    "authorization_code"
+  ],
+  "acr_values": [
+    ""
+  ]
 }
