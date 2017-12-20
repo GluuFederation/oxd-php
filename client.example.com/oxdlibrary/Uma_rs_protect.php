@@ -76,7 +76,7 @@
 	    public $request_condition = array();
             
             /**
-             * var string $request_protection_access_token
+             * @var string $request_protection_access_token
              */
             private $request_protection_access_token;
             

@@ -70,28 +70,28 @@
 	    private $request_oxd_id = null;
             
             /**
-             * var string $request_ticket
+             * @var string $request_ticket
              */
             
             private $request_ticket;
             
             /**
-             * var string $request_protection_access_token
+             * @var string $request_protection_access_token
              */
             private $request_protection_access_token;
             
             /**
-             * var string $request_claims_redirect_uri
+             * @var string $request_claims_redirect_uri
              */
             private $request_claims_redirect_uri;
             
             /**
-             * var string $request_claims_redirect_uri
+             * @var string $request_claims_redirect_uri
              */
             private $response_url;
             
             /**
-             * var string $request_claims_redirect_uri
+             * @var string $request_claims_redirect_uri
              */
             private $response_state;
             
