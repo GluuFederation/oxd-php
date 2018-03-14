@@ -19,7 +19,6 @@
         <div id="notify-message"></div>
     </div>
 </div>
-
 <div class="jumbotron" style="margin-top: 70px;">
     <h1>oxd PHP Application UMA</h1>
 </div>

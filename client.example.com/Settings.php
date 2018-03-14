@@ -103,7 +103,7 @@ and open the template in the editor.
                                 <input type="button" value="Edit" class="btn btn-primary" id="edit">
                                 <input type="button" value="Delete" class="btn btn-primary" id="del">
                                 <input type="button" value="Login" class="btn btn-primary" id="login">
-                                <button class="btn btn-primary"><a href="Uma.php" style="color:white;">UMA</a></button>
+                                <input type="button" value="UMA" class="btn btn-primary" id="uma">
                             <?php }else{ ?>
                                 <input type="button" value="Register" class="btn btn-primary" id="register">
                             <?php } ?>
@@ -241,17 +241,22 @@ and open the template in the editor.
                 });
                 
                 $("#del").click(function(){
+                    $("#loadingDiv").show();
                     jQuery.post(
                         "Delete.php",
                         {},
                         function (data) {
                             location.reload();
+//                            alert(data);
                         }
                     );
                 });
                 
                 $("#login").click(function(){
                     window.location = "Login.php";
+                });
+                $("#uma").click(function(){
+                    window.location = "Uma.php";
                 });
             });
         </script>

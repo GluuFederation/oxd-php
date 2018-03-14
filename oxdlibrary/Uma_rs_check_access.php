@@ -206,7 +206,7 @@
 	    {
 	        $this->request_http_method = $request_http_method;
 	    }
-            
+	
 	    /**
 	     * @return string
 	     */
@@ -224,7 +224,37 @@
 	    {
 	        $this->command = 'uma_rs_check_access';
 	    }
-	
+            
+            private $is_needinfo;
+            
+            private $required_claims;
+            
+            private $redirect_user;
+            
+            function getIs_needinfo() {
+                return $this->is_needinfo;
+            }
+
+            function getRequired_claims() {
+                return $this->required_claims;
+            }
+
+            function getRedirect_user() {
+                return $this->redirect_user;
+            }
+
+            function setIs_needinfo($is_needinfo) {
+                $this->is_needinfo = $is_needinfo;
+            }
+
+            function setRequired_claims($required_claims) {
+                $this->required_claims = $required_claims;
+            }
+
+            function setRedirect_user($redirect_user) {
+                $this->redirect_user = $redirect_user;
+            }
+            
 	    /**
 	     * Protocol parameter to oxd server
 	     * @return void
@@ -238,6 +268,57 @@
 	            "http_method" => $this->getRequestHttpMethod(),
                     "protection_access_token" => $this->getRequest_protection_access_token()
 	        );
+	    }
+            
+            /**
+	     * send function sends the command to the oxd server.
+	     *
+	     * Args:
+	     * command (dict) - Dict representation of the JSON command string
+	     * @return	void
+	     **/
+	    public function request($url="")
+	    {
+	        $this->setParams();
+	
+	        $jsondata = json_encode($this->getData(), JSON_UNESCAPED_SLASHES);
+	
+	        if(!$this->is_JSON($jsondata)){
+	            $this->log("Sending parameters must be JSON.",'Exiting process.');
+	            $this->error_message('Sending parameters must be JSON.');
+	        }
+	        $lenght = strlen($jsondata);
+	        if($lenght<=0){
+	            $this->log("Length must be more than zero.",'Exiting process.');
+	            $this->error_message("Length must be more than zero.");
+	        }else{
+	            $lenght = $lenght <= 999 ? "0" . $lenght : $lenght;
+	        }
+                if(Client_Socket_OXD_RP::getUrl() != null || $url != ""){
+                    $jsonHttpData = $this->getData()["params"];
+                    $this->response_json = $this->oxd_http_request(Client_Socket_OXD_RP::getUrl()?Client_Socket_OXD_RP::getUrl():$url,$jsonHttpData);
+                }
+                else{
+                    $this->response_json = $this->oxd_socket_request(utf8_encode($lenght . $jsondata));
+                    $this->response_json = str_replace(substr($this->response_json, 0, 4), "", $this->response_json);
+                }
+	        if ($this->response_json) {
+	            $object = json_decode($this->response_json);
+	            if ($object->status == 'error') {
+                        if($object->data->error == "need_info"){
+                            $this->setIs_needinfo(true);
+                            $this->setRequired_claims($object->data->details->required_claims);
+                            $this->setRequired_claims($object->data->details->redirect_user);
+                        } else {
+                            $this->error_message($object->data->error . ' : ' . $object->data->error_description);
+                        }
+	            } elseif ($object->status == 'ok') {
+	                $this->response_object = json_decode($this->response_json);
+	            }
+	        } else {
+	            $this->log("Response is empty...",'Exiting process.');
+	            $this->error_message('Response is empty...');
+	        }
 	    }
 	
 	}

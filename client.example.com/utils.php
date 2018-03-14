@@ -3,6 +3,8 @@
     require_once './oxdlibrary/Get_client_access_token.php';
     require_once './oxdlibrary/Get_access_token_by_refresh_token.php';
     require_once './oxdlibrary/Uma_rp_get_claims_gathering_url.php';
+    require_once './oxdlibrary/Introspect_access_token.php';
+    require_once './oxdlibrary/Uma_introspect_rpt.php';
     $config = include('./oxdlibrary/oxdHttpConfig.php');
     $baseUrl = __DIR__;
     $oxdRpConfig = json_decode(file_get_contents($baseUrl . '/oxdlibrary/oxd-rp-settings.json'));
@@ -196,7 +198,28 @@
         $claimsGatheringUrl->setRequest_protection_access_token(getClientProtectionAccessToken());
         $claimsGatheringUrl->request();
         return $claimsGatheringUrl->getResponse_url();
-        
+    }
+    
+    function introspectAccessToken($access_token,$config = null){
+        $baseUrl = __DIR__;
+        $oxdJSON = file_get_contents($baseUrl.'/oxdId.json');
+        $oxdOBJECT = json_decode($oxdJSON);
+        $introspectaccesstoken = new Introspect_access_token($config);
+        $introspectaccesstoken->setRequest_oxd_id($oxdOBJECT->oxd_id);
+        $introspectaccesstoken->setRequest_access_token($access_token);
+        $introspectaccesstoken->request();
+        return $introspectaccesstoken->getResponse_active();
+    }
+    
+    function introspectRpt($RPT,$config = null){
+        $baseUrl = __DIR__;
+        $oxdJSON = file_get_contents($baseUrl.'/oxdId.json');
+        $oxdOBJECT = json_decode($oxdJSON);
+        $introspectRpt = new Uma_introspect_rpt($config);
+        $introspectRpt->setRequest_oxd_id($oxdOBJECT->oxd_id);
+        $introspectRpt->setRequest_rpt($RPT);
+        $introspectRpt->request();
+        return $introspectRpt->getResponse_active();
     }
 ?>
 

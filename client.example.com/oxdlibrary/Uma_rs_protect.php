@@ -135,6 +135,7 @@
 	     */
 	    public function getRequestResources()
 	    {
+	
 	        return $this->request_resources;
 	    }
             /**
@@ -149,18 +150,23 @@
 	        array_push($this->request_resources, $request_resources);
 	        //$this->request_condition = null;
 	    }
-            /**
-             * @param array $httpMethods
-             * @param array $scopes
-             * @param array $ticketScopes
-	     * @return array $request_condition
-	     */
-	    public function addConditionForPath(array $httpMethods, array $scopes, array $ticketScopes){
+	    /**
+              * @param array $httpMethods
+              * @param array $scopes
+              * @param array $ticketScopes
+              * @param array $scope_expression
+	      * @return request_condition
+	      */
+	    public function addConditionForPath(array $httpMethods, array $scopes, array $ticketScopes, array $scope_expression = null){
 	        $request_condition =   array(
-	                                        "httpMethods" => $httpMethods,
-	                                        "scopes" => $scopes,
-	                                        "ticketScopes" => $ticketScopes
+	                                        "httpMethods" => $httpMethods
 	        );
+                if(!is_null($scope_expression)){
+                    $request_condition['scope_expression'] = $scope_expression;
+                } else {
+                    $request_condition['scopes'] = $scopes;
+                    $request_condition['ticketScopes'] = $ticketScopes;
+                }
 	
 	        array_push($this->request_condition, $request_condition);
 	        return $this->request_condition;

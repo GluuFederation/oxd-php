@@ -1,6 +1,6 @@
 <?php
     require_once './utils.php';
-    require_once './oxdlibrary/Update_site_registration.php';
+    require_once './oxdlibrary/Update_site.php';
     $config = include('./oxdlibrary/oxdHttpConfig.php');
     $baseUrl = __DIR__;
     $oxdJSON = file_get_contents($baseUrl . '/oxdId.json');
@@ -38,27 +38,27 @@
     try{
         if($oxdRpConfig->conn_type == "local"){
     //	    This is for OXD Socket
-            $update_site_registration = new Update_site_registration();
+            $update_site = new Update_site();
         }
         else if($oxdRpConfig->conn_type == "web"){
     //	    This is for OXD Web
-            $update_site_registration = new Update_site_registration($config);
+            $update_site = new Update_site($config);
         }
-        $update_site_registration->setRequestAcrValues(Oxd_RP_config::$acr_values);
-        $update_site_registration->setRequestOxdId($oxdId);
-        $update_site_registration->setRequestAuthorizationRedirectUri(Oxd_RP_config::$authorization_redirect_uri);
-        $update_site_registration->setRequestPostLogoutRedirectUri(Oxd_RP_config::$post_logout_redirect_uri);
-        $update_site_registration->setRequestGrantTypes(Oxd_RP_config::$grant_types);
-        $update_site_registration->setRequestResponseTypes(Oxd_RP_config::$response_types);
-        $update_site_registration->setRequestScope(Oxd_RP_config::$scope);
+        $update_site->setRequestAcrValues(Oxd_RP_config::$acr_values);
+        $update_site->setRequestOxdId($oxdId);
+        $update_site->setRequestAuthorizationRedirectUri(Oxd_RP_config::$authorization_redirect_uri);
+        $update_site->setRequestPostLogoutRedirectUri(Oxd_RP_config::$post_logout_redirect_uri);
+        $update_site->setRequestGrantTypes(Oxd_RP_config::$grant_types);
+        $update_site->setRequestResponseTypes(Oxd_RP_config::$response_types);
+        $update_site->setRequestScope(Oxd_RP_config::$scope);
         if($oxdObject->has_registration_endpoint){
             if($oxdRpConfig->conn_type == "local"){
-                $update_site_registration->setRequest_protection_access_token(getClientProtectionAccessToken());
+                $update_site->setRequest_protection_access_token(getClientProtectionAccessToken());
             }else if($oxdRpConfig->conn_type == "web"){
-                $update_site_registration->setRequest_protection_access_token(getClientProtectionAccessToken($config));
+                $update_site->setRequest_protection_access_token(getClientProtectionAccessToken($config));
             }
         }
-        $update_site_registration->request($update_site_registration->getUrl());
+        $update_site->request($update_site->getUrl());
         setMessage("Successfully Updated");
         echo "{\"status\":\"ok\"}";
     }

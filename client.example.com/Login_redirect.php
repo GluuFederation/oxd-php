@@ -31,6 +31,20 @@ try {
     $data['refreshToken'] = $get_tokens_by_code->getResponseRefreshToken();
     $data['idToken'] = $get_tokens_by_code->getResponseIdToken();
     $data['idTokenClaims'] = $get_tokens_by_code->getResponseIdTokenClaims();
+    if ($oxdObject->has_registration_endpoint) {
+        if($oxdRpConfig->conn_type == "local"){
+            $is_active_token = introspectAccessToken($data['accessToken']);
+        }else if($oxdRpConfig->conn_type == "web"){
+            $is_active_token = introspectAccessToken($data['accessToken'],$config);
+        }
+        if(!$is_active_token){
+            if($oxdRpConfig->conn_type == "local"){
+                $data['accessToken'] = getAccessTokenFromRefreshToken($data['refreshToken']);
+            }else if($oxdRpConfig->conn_type == "web"){
+                $data['accessToken'] = getAccessTokenFromRefreshToken($data['refreshToken'],$config);
+            }
+        }
+    }
 } catch (Exception $e) {
     echo $e->getMessage();
 }

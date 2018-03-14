@@ -14,7 +14,10 @@ return [
     'uma_rs_protect' => 'uma-rs-protect',
     'uma_rs_check_access' => 'uma-rs-check-access',
     'uma_rp_get_rpt' => 'uma-rp-get-rpt',
-    'uma_rp_get_claims_gathering_url' => 'uma-rp-get-claims-gathering-url'
+    'uma_rp_get_claims_gathering_url' => 'uma-rp-get-claims-gathering-url',
+    'introspect_access_token' => 'introspect-access-token',
+    'introspect_rpt' => 'introspect-rpt',
+    'remove_site' => 'remove-site'
 ];
 ?>
 

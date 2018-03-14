@@ -67,7 +67,7 @@
 	     * @var array $command_types        Protocols commands name
 	     */
 	    private $command_types = array( 'get_authorization_url',
-	                                    'update_site_registration',
+	                                    'update_site',
 	                                    'get_tokens_by_code',
 	                                    'get_user_info',
 	                                    'register_site',
@@ -81,7 +81,10 @@
                                             'setup_client',
                                             'get_client_token',
                                             'get_access_token_by_refresh_token',
-                                            'uma_rp_get_claims_gathering_url'
+                                            'uma_rp_get_claims_gathering_url',
+                                            'remove_site',
+                                            'introspect_access_token',
+                                            'introspect_rpt'
 	    );
 	    /**
 	     * @var string $command             Extend class protocol command name, for sending oxd-server

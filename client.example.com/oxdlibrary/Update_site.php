@@ -61,7 +61,7 @@
 	
 	require_once 'Client_OXD_RP.php';
 	
-	class Update_site_registration extends Client_OXD_RP
+	class Update_site extends Client_OXD_RP
 	{
 	    /**
 	     * @var string $request_oxd_id                          This parameter you must get after registration site in gluu-server
@@ -456,7 +456,7 @@
 	     */
 	    public function setCommand()
 	    {
-	        $this->command = 'update_site_registration';
+	        $this->command = 'update_site';
 	    }
 	    /**
 	     * Protocol parameter to oXD server

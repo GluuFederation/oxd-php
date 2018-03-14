@@ -28,6 +28,7 @@
             $uma_rp_get_rpt->setRequest_protection_access_token(getClientProtectionAccessToken($config));
         }
         $uma_rp_get_rpt->request();
+
         if($uma_rp_get_rpt->getIs_needinfo()){
             if($oxdRpConfig->conn_type == "local"){
                 $url = getClaimsGatheringUrl($uma_rp_get_rpt->getNeedinfo_ticket());
@@ -36,8 +37,17 @@
             }
             header("Location: $url");
         } else {
-            $response = getProtectedResource($_REQUEST["protected_resource"],$uma_rp_get_rpt->getResponse_access_token());
-            print_r($response);
+            if($oxdRpConfig->conn_type == "local"){
+                $is_active_rpt = introspectRpt($uma_rp_get_rpt->getResponse_access_token());
+            } else if($oxdRpConfig->conn_type == "web"){
+                $is_active_rpt = introspectRpt($uma_rp_get_rpt->getResponse_access_token(),$config);
+            }
+            if($is_active_rpt){
+                $response = getProtectedResource($_REQUEST["protected_resource"],$uma_rp_get_rpt->getResponse_access_token());
+                print_r($response);
+            } else {
+                echo "Inactive RPT";
+            }
         }
     }
     catch(Exception $e){
