@@ -10,6 +10,7 @@ $uma_rs_protect->addConditionForPath(["GET"],["http://vlad.umatest.com/dev/actio
 $uma_rs_protect->addConditionForPath(["POST"],[ "http://vlad.umatest.com/dev/actions/add"],[ "http://vlad.umatest.com/dev/actions/add"]);
 $uma_rs_protect->addConditionForPath(["DELETE"],["http://vlad.umatest.com/dev/actions/remove"], ["http://vlad.umatest.com/dev/actions/remove"]);
 $uma_rs_protect->addResource('/uma/testresource');
+$uma_rs_protect->setRequestOverwrite(true);
 $uma_rs_protect->setRequest_protection_access_token($_SESSION['protection_access_token']);
 $uma_rs_protect->request();
 echo '<br/>Uma_rs_protect<pre>';

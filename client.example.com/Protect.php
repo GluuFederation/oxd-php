@@ -15,9 +15,44 @@
     //	    This is for OXD-TO-HTTP
             $uma_rs_protect = new Uma_rs_protect($config);
         }
+        $segment = explode('/',$_SERVER['REQUEST_URI']);
+        array_pop($segment);
+        $segment = implode("/",$segment);
         $uma_rs_protect->setRequestOxdId($oxdObject->oxd_id);
-        $uma_rs_protect->addConditionForPath(["GET"], ["https://scim-test.gluu.org/identity/seam/resource/restv1/scim/vas1"], ["https://scim-test.gluu.org/identity/seam/resource/restv1/scim/vas1"]);
-        $uma_rs_protect->addResource("/photo");
+        //with scope expression
+//        $rule = [
+//            'and' => [
+//                ['or' => [
+//                    ['var' => 0],
+//                    ['var' => 1]]
+//                ],
+//                ['var' => 2]
+//            ]
+//        ];
+//        $data = [
+//			"https://rsapi.com",
+//			"https://rsapi2.com",
+//			"https://rsapi3.com"
+//		];
+//        $uma_rs_protect->addConditionForPath(
+//                                                ["GET","POST"],
+//                                                [], 
+//                                                [],
+//                                                ["rule"=>$rule,"data"=>$data]
+//                                            );
+                                            
+//without scope expression                                            
+        $uma_rs_protect->addConditionForPath(
+                                                ["GET","POST"],
+                                                ['https://rsapi.com'], 
+                                                ['https://rsapi.com']
+                                            );
+        
+        $segment = explode('/',$_SERVER['REQUEST_URI']);
+        array_pop($segment);
+        $segment = implode("/",$segment);
+        $uma_rs_protect->addResource($segment."/api.php");
+        $uma_rs_protect->setRequestOverwrite(true);
         if($oxdRpConfig->conn_type == "local"){
             $uma_rs_protect->setRequest_protection_access_token(getClientProtectionAccessToken());
         }else if($oxdRpConfig->conn_type == "web"){
@@ -25,7 +60,7 @@
         }
         
         $uma_rs_protect->request();
-        echo $uma_rs_protect->getResponseJSON();
+        header("Location: https://".$_SERVER['SERVER_NAME'].$segment."/Settings.php");
     }
     catch(Exception $e){
         echo "{\"error\":\"".$e->getMessage()."\"}";
