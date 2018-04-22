@@ -82,6 +82,11 @@
 	    public $request_condition = array();
             
             /**
+             * var boolean $request_overwrite
+             */
+            private $request_overwrite;
+            
+            /**
              * var string $request_protection_access_token
              */
             private $request_protection_access_token;
@@ -129,7 +134,24 @@
 	    {
 	        $this->request_oxd_id = $request_oxd_id;
 	    }
+            
+            /**
+	     * @return string
+	     */
+	    public function getRequestOverwrite()
+	    {
+	        return $this->request_overwrite;
+	    }
 	
+	    /**
+	     * @param boolean $request_overwrite
+	     * @return void
+	     */
+	    public function setRequestOverwrite($request_overwrite = false)
+	    {
+	        $this->request_overwrite = $request_overwrite;
+	    }
+            
 	    /**
 	     * @return array
 	     */
@@ -195,6 +217,7 @@
 	        $this->params = array(
 	            "oxd_id" => $this->getRequestOxdId(),
 	            "resources" => $this->getRequestResources(),
+                    "overwrite" => $this->getRequestOverwrite(),
                     "protection_access_token" => $this->getRequest_protection_access_token()
 	        );
 	    }
